@@ -47,7 +47,6 @@ body {
     background-repeat:no-repeat;
     background-position-x: -280px;
     background-position-y: -500px;
-    object-fit: cover;
     position: relative;
     
 }
@@ -56,9 +55,9 @@ body::after {
     content: url(./images/bg-pattern-bottom.svg);
     position: absolute;
     z-index: -1;
-    right: -200px;
     top: 200px;
-    object-fit: cover;
+    right: -200px;
+    
 }
 
 
@@ -71,6 +70,7 @@ body::after {
 
 .profile__card {
     margin-top: 150px;
+    isolation: isolate;
 }
 
 .profile__card--container {
@@ -155,4 +155,151 @@ body::after {
     font-size: 14px;
 }
 
-@media (max-width: )
+@media (max-width: 1340px) {
+    body {
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -280px;
+        background-position-y: -520px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 200px;
+        right: -240px;
+
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -380px;
+        background-position-y: -545px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 210px;
+        right: -230px;
+
+        
+    }
+}
+
+@media (max-width: 1055px) {
+    body {
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -380px;
+        background-position-y: -545px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 190px;
+        right: -300px;
+
+        
+    }
+}
+
+@media (max-width: 880px) {
+    body {
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -430px;
+        background-position-y: -580px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 190px;
+        right: -370px;
+
+        
+    }
+}
+
+@media (max-width: 690px) {
+    body {
+        margin: 0 auto;
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -400px;
+        background-position-y: -700px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 190px;
+        right: -445px;
+
+        
+    }
+}
+
+@media (max-width: 460px) {
+    body {
+        margin: 0 auto;
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -400px;
+        background-position-y: -700px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 215px;
+        right: -540px;
+
+        
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat:no-repeat;
+        background-position-x: -805px;
+        background-position-y: -470px;
+
+        
+    }
+    
+    body::after {
+        content: url(./images/bg-pattern-bottom.svg);
+        position: absolute;
+        z-index: -1;
+        top: 115px;
+        right: -750px;
+
+        
+    }
+}
