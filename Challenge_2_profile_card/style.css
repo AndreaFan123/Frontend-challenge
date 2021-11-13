@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
@@ -7,299 +8,136 @@
     --font-gray: hsl(0, 0%, 59%);
 }
 
-/* Layout
 
-- Mobile: 375px
-- Desktop: 1440px
-
-*/
-
-/* Font size
-
-- 18px
-
-*/
-
-/* Font weight
-
-- 400
-- 700
-
-*/
 
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: inherit;
-}
-
-html {
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-size: 18px;
     font-family: "Kumbh Sans", sans-serif;
     background-color: var(--dark-cyan);
-    max-width: 1440px;
-    margin: 0 auto;
-    background-image: url(./images/bg-pattern-top.svg);
-    background-repeat:no-repeat;
-    background-position-x: -280px;
-    background-position-y: -500px;
-    position: relative;
-    
+    width: 1140px;
+    font-size: 18px;
 }
 
-body::after {
-    content: url(./images/bg-pattern-bottom.svg);
+
+#bg__top {
     position: absolute;
-    z-index: -1;
-    top: 200px;
-    right: -200px;
-    
+    bottom: 40%;
 }
 
-
-
-.profile__info--text {
-    font-size: 16px;
-    color: var(--font-gray);
+#bg__bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
-
-.profile__card {
-    margin-top: 150px;
-    isolation: isolate;
+.profile__section {
+    height: 100vh;
 }
 
 .profile__card--container {
     width: 350px;
-    height: 370px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 15px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 30px;
-    text-align: center;
-    
-}
-
-.profile__wrapper {
-    position: relative;
-    isolation: isolate;
-    
+    background-color: #fff;
 }
 
 .profile__bg {
-    display: block;
-    background-position: center;
-    /* border-radius: 15px 15px 0 0; */
     position: relative;
-    z-index: 1;
-    padding-bottom: 60px;
-}
-
-.profile__selfie {
-    position: absolute;
-    top: 84px;
-    right: 133px;
-    z-index: 2;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 4px solid #fff;
 }
 
 .profile__selfie--img {
+    position: absolute;
+    top: 90px;
+    left: 125px;
+    right: 0;
+    bottom: 30px;
     border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.profile__card--imgs {
+    padding-bottom: 70px;
 }
 
 .profile__info--personal {
-   text-align: center;
-}
-
-.profile__info--info {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
 }
 
 .age {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .location {
-    padding-bottom: 25px;
+    text-align: center;
+    padding: 17px 0;
+    color: var(--font-gray);
 }
 
-.profile__line {
+.profile__info--divider {
     width: 350px;
     border-bottom: 1px solid rgb(196, 193, 193);
 }
 
 .profile__info--items {
-    padding: 25px 0;
     display: flex;
     text-align: center;
-    justify-content: center;
-    justify-content:space-evenly;
-}
+    justify-content: space-evenly;
+    padding: 20px 0;
 
-.reduce {
-    padding-right: 15px;
 }
+/* 
+.item--2--reduce {
+    padding-right: 30px;
+} */
+
 
 .text-small {
-    padding-top: 5px;
-    font-size: 14px;
+    color: var(--font-gray);
+    font-size: 13px;
 }
 
-@media (max-width: 1340px) {
-    body {
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -280px;
-        background-position-y: -520px;
 
-        
+@media (max-width: 1800px) {
+    #bg__top {
+        position: absolute;
+        bottom: 40%;
+        right: 50%;
     }
     
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
+    #bg__bottom {
         position: absolute;
-        z-index: -1;
-        top: 200px;
-        right: -240px;
-
-        
+        top: 50%;
+        left: 50%;
     }
 }
 
-@media (max-width: 1200px) {
-    body {
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -380px;
-        background-position-y: -545px;
-
-        
+@media (max-width: 500px) {
+    profile__section {
+        height: 100vh;
     }
     
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
+    .profile__card--container {
+        width: 350px;
+        height: 380px;
         position: absolute;
-        z-index: -1;
-        top: 210px;
-        right: -230px;
-
-        
-    }
-}
-
-@media (max-width: 1055px) {
-    body {
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -380px;
-        background-position-y: -545px;
-
-        
-    }
-    
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
-        position: absolute;
-        z-index: -1;
-        top: 190px;
-        right: -300px;
-
-        
-    }
-}
-
-@media (max-width: 880px) {
-    body {
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -430px;
-        background-position-y: -580px;
-
-        
-    }
-    
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
-        position: absolute;
-        z-index: -1;
-        top: 190px;
-        right: -370px;
-
-        
-    }
-}
-
-@media (max-width: 690px) {
-    body {
-        margin: 0 auto;
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -400px;
-        background-position-y: -700px;
-
-        
-    }
-    
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
-        position: absolute;
-        z-index: -1;
-        top: 190px;
-        right: -445px;
-
-        
-    }
-}
-
-@media (max-width: 460px) {
-    body {
-        margin: 0 auto;
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -400px;
-        background-position-y: -700px;
-
-        
-    }
-    
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
-        position: absolute;
-        z-index: -1;
-        top: 215px;
-        right: -540px;
-
-        
-    }
-}
-
-@media (max-width: 375px) {
-    body {
-        background-image: url(./images/bg-pattern-top.svg);
-        background-repeat:no-repeat;
-        background-position-x: -805px;
-        background-position-y: -470px;
-
-        
-    }
-    
-    body::after {
-        content: url(./images/bg-pattern-bottom.svg);
-        position: absolute;
-        z-index: -1;
-        top: 115px;
-        right: -750px;
-
-        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
     }
 }

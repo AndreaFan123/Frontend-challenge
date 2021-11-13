@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
 </head>
 <body>
-    <section class="profile__card">
-      <div class="profile__card--container">
-        <div class="profile__wrapper">
-          <img src="./images/bg-pattern-card.svg" alt="" class="profile__bg">
-          <div class="profile__selfie">
-            <img src="./images/image-victor.jpg" alt="" class="profile__selfie--img">
-          </div>
-          <div class="profile__info--personal">
-            <div class="profile__info--info">
-              <h4 class="profile ">Victor Crest</h4>
-              <p class="profile profile__info--text age">26</p>
-            </div>
-            <p class="profile profile__info--text location">London</p>
-          </div>
-          <div class="profile__line"></div>
+  <!-- Bg-top -->
+  <img src="images/bg-pattern-top.svg" alt="" id="bg__top">
+  <img src="images/bg-pattern-bottom.svg" alt="" id="bg__bottom">
 
-          <div class="profile__info--items">
-            <!-- item 1 -->
-            <div class="profile__info--item">
-              <h4 class="profile__info--title">80K</h4>
-              <p class="profile__info--text text-small">Followers</p>
-            </div>
+  <!-- Bg-bottom -->
+  
 
-            <!-- item 2 -->
-            <div class="profile__info--item reduce">
-              <h4 class="profile__info--title ">803K</h4>
-              <p class="profile__info--text text-small">Likes</p>
-            </div>
 
-            <!-- item 2 -->
-            <div class="profile__info--item">
-              <h4 class="profile__info--title push">1.4K</h4>
-              <p class="profile__info--text text-small push">Photos</p>
+    <div class="profile__section">
+        <div class="profile__card--container">
+            <div class="profile__card--imgs">
+                <img src="./images/bg-pattern-card.svg" alt="" class="profile__bg">
+                <img src="./images/image-victor.jpg" alt="" class="profile__selfie--img">
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Andrea Fan</a>.
-  </div>
+            <div class="profile__info--personal">
+                <h4 class="profile__info--name">Victor Crest</h4>
+                <p class="profile profile__info--text age">26</p>
+            </div>
+            <p class="profile__info--text location">London</p>
+            <div class="profile__info--divider"></div>
+
+            <!-- Items -->
+            <div class="profile__info--items">
+                <!-- item 1 -->
+                <div class="profile__info--item item--1">
+                  <h4 class="profile__info--title">80K</h4>
+                  <p class="profile__info--text text-small">Followers</p>
+                </div>
+    
+                <!-- item 2 -->
+                <div class="profile__info--item item--2--reduce">
+                  <h4 class="profile__info--title ">803K</h4>
+                  <p class="profile__info--text text-small">Likes</p>
+                </div>
+    
+                <!-- item 2 -->
+                <div class="profile__info--item item--3">
+                  <h4 class="profile__info--title push">1.4K</h4>
+                  <p class="profile__info--text text-small push">Photos</p>
+                </div>
+              </div>
+    </div>
+
+    
 </body>
 </html>
