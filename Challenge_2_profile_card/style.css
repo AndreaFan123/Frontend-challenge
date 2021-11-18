@@ -21,6 +21,7 @@ body {
     background-color: var(--dark-cyan);
     width: 1140px;
     font-size: 18px;
+    overflow: hidden;
 }
 
 
@@ -125,7 +126,18 @@ body {
 }
 
 @media (max-width: 500px) {
-    profile__section {
+
+    .body {
+        font-family: "Kumbh Sans", sans-serif;
+        background-color: var(--dark-cyan);
+        width: 375px;
+        font-size: 18px;
+        overflow: hidden;
+    }
+
+
+
+    .profile__section {
         height: 100vh;
     }
     
