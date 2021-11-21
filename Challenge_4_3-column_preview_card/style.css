@@ -11,7 +11,7 @@
 - card-2: hsl(184, 100%, 22%)
 - card-3: hsl(179, 100%, 13%)
 - main-font: hsla(0, 0%, 100%, 0.75)
-- light white(bg, heading, btns) : sl(0, 0%, 95%)
+- light white(bg, heading, btns) : hsl(0, 0%, 95%)
 
 */
 
@@ -30,3 +30,68 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
+:root {
+  --card-1: hsl(31, 77%, 52%);
+  --card-2: hsl(184, 100%, 22%);
+  --card-3: hsl(179, 100%, 13%);
+  --main-font: hsla(0, 0%, 100%, 0.75);
+  --light-white: hsl(0, 0%, 95%);
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--light-white);
+  font-size: 1rem;
+  width: 100%;
+}
+
+.preview__card--section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.preview__card--container {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.preview__card--items {
+  /* padding: 20px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 900px;
+  height: 500px;
+}
+
+.preview__card--item {
+  padding: 50px;
+  
+}
+
+.item--1 {
+  background-color: var(--card-1);
+}
+
+.item--2 {
+  background-color:var(--card-2);
+}
+
+.item--3 {
+  background-color: var(--card-3);
+}
+
+.preview__card--img {
+  padding-bottom: 30px;
+}
