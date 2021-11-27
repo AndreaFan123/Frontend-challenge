@@ -50,16 +50,13 @@ html,
 body {
   background-color: var(--light-white);
   font-size: 1rem;
-  width: 100%;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 1440px;
 }
 
-.preview__card--section {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 
 .preview__card--container {
-  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,8 +68,8 @@ body {
   /* padding: 20px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 900px;
-  height: 500px;
+  width: 1000px;
+  height: 550px;
 }
 
 .preview__card--item {
@@ -80,8 +77,10 @@ body {
   
 }
 
+
 .item--1 {
   background-color: var(--card-1);
+  border-radius: 10px 0 0 10px;
 }
 
 .item--2 {
@@ -90,8 +89,60 @@ body {
 
 .item--3 {
   background-color: var(--card-3);
+  border-radius: 0 10px 10px 0;
 }
 
 .preview__card--img {
   padding-bottom: 30px;
+}
+
+.preivew__card--title {
+  padding-bottom: 30px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--light-white);
+}
+
+.preview__card--text {
+  padding-right: 10px;
+  padding-bottom: 80px;
+  color: var(--main-font);
+  line-height: 1.7rem;
+}
+
+.preview__card--btn {
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+}
+
+.btn-orange,
+.btn-green,
+.btn-dark-green {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.1rem;
+}
+
+.btn-orange {
+  color: var(--card-1);
+}
+
+.btn-green {
+  color: var(--card-2);
+}
+
+.btn-dark-green {
+  color: var(--card-3);
+}
+
+.attribution {
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.main {
+  /* background-color: red; */
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  /* width: fit-content; */
+  max-width: 1440px;
+  margin: 20px;
+  background-color:cornflowerblue;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2;
+  width: 1000px;
+  height: 530px;
+}
+
+.grid-1,
+.grid-2,
+.grid-3 {
+  padding: 40px;
+}
+
+.grid-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.grid-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.grid-3 {
+  background-color:hsl(179, 100%, 13%);
+}
+
+img {
+  padding-bottom: 50px;;
+}
+
+.grid-title {
+  padding-bottom: 30px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+.grid-text {
+  padding-bottom: 80px;
+  line-height: 1.7rem;
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-right: 30px;
+}
+
+.grid-btn {
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.1rem;
+}
+
+.btn-orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-green {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-dark-green {
+  color: hsl(179, 100%, 13%);
+}
