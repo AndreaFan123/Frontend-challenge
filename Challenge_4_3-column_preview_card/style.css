@@ -28,7 +28,7 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;400&display=swap');
 
 :root {
   --card-1: hsl(31, 77%, 52%);
@@ -38,111 +38,154 @@
   --light-white: hsl(0, 0%, 95%);
 }
 
-
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,
-body {
-  background-color: var(--light-white);
-  font-size: 1rem;
-  font-family: 'Lexend Deca', sans-serif;
-  width: 1440px;
-}
-
-
-
-.preview__card--container {
+.main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card-container {
+  max-width: 1000px;
+  margin: 20px;
+  display: flex;
+  border-radius: 10px;
   overflow: hidden;
 }
 
-.preview__card--items {
-  /* padding: 20px; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 1000px;
-  height: 550px;
+.card {
+  padding: 20px 75px 20px 40px;
 }
 
-.preview__card--item {
-  padding: 50px;
-  
-}
-
-
-.item--1 {
+.orange {
   background-color: var(--card-1);
-  border-radius: 10px 0 0 10px;
 }
 
-.item--2 {
-  background-color:var(--card-2);
+.green {
+  background-color: var(--card-2);
 }
 
-.item--3 {
+.dark-green {
   background-color: var(--card-3);
-  border-radius: 0 10px 10px 0;
 }
 
-.preview__card--img {
-  padding-bottom: 30px;
+.card img {
+  padding: 30px 0 40px 0;
 }
 
-.preivew__card--title {
-  padding-bottom: 30px;
+.card h1 {
   font-family: 'Big Shoulders Display', cursive;
-  font-size: 2.5rem;
-  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding-bottom: 40px;
   color: var(--light-white);
+  text-transform: uppercase;
 }
 
-.preview__card--text {
-  padding-right: 10px;
-  padding-bottom: 80px;
-  color: var(--main-font);
-  line-height: 1.7rem;
-}
-
-.preview__card--btn {
-  border: none;
-  padding: 16px 40px;
-  border-radius: 30px;
-}
-
-.btn-orange,
-.btn-green,
-.btn-dark-green {
+.card p {
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: var(--main-font);
+  padding-bottom: 80px;
 }
 
-.btn-orange {
+.card-btn {
+  border: none;
+  padding: 16px 35px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn-1,
+.btn-2,
+.btn-3 {
+  font-size: 1rem;
+}
+
+.btn-1 {
   color: var(--card-1);
 }
 
-.btn-green {
+.btn-2 {
   color: var(--card-2);
 }
 
-.btn-dark-green {
+.btn-3 {
   color: var(--card-3);
 }
 
-.attribution {
-  font-family: 'Lexend Deca', sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 13px;
+@media (max-width: 890px) {
+  .card {
+    padding: 20px 50px 20px 30px;
+  }
 }
 
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+@media (max-width: 785px) {
+  .card {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+@media (max-width: 715px) {
+  .card {
+    padding: 20px 15px 20px 15px;
+  }
+}
+
+@media (max-width: 635px) {
+  .main {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+  }
+  
+  .card-container {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media (max-width: 515px) {
+  .main {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+  }
+  
+  .card-container {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .card-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    padding: 20px 25px 20px 25px;
+  }
 }
