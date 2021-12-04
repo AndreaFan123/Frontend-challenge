@@ -1,0 +1,124 @@
+/* Size 
+
+Desktop: 1440px
+mobile: 375px
+
+*/
+
+/* Color
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+*/
+
+/* Font
+
+HEADING
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+BODY
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+*/
+
+/* icon
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat fixed
+    center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 100px;
+}
+
+.header-logo {
+  width: 100%;
+  margin: 50px 0 70px 0;
+}
+
+.header-logo img {
+  width: 200px;
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-photo {
+  width: 720px;
+}
+
+.header-txt {
+  width: 670px;
+  margin-left: 50px;
+  padding-top: 40px;
+}
+
+.header-txt h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.header-txt p {
+  font-size: 1.05rem;
+  color: #fff;
+  padding-bottom: 25px;
+}
+
+.header-txt .btn {
+  border: none;
+  font-size: 1.2rem;
+  padding: 17px 60px;
+  border-radius: 200px;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 10px 25px rgba(43, 43, 43, 0.7);
+}
+
+.header-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.header-icons span {
+  margin-left: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 999em;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icons .fab {
+  font-size: 1.3rem;
+}
