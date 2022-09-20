@@ -1,5 +1,72 @@
+/* method 1 
+
 :root {
-  --bg-color: hsl(230, 35%, 7%);
-  --btn-color: hsl(0, 0%, 100%);
-  --light-purple: hsl(231, 77%, 90%);
+  --color-dark: hsl(230 35% 7%);
+  --color-white: hsl(0 0% 100%);
+  --color-light: hsl(231  77% 90%);
 }
+
+*/
+
+:root {
+  --color-dark: 230 35% 7%;
+  --color-white: 0 0% 100%;
+  --color-light: 231  77% 90%;
+}
+
+.bg-dark {
+  background-color: hsl(var(--color-dark));
+}
+
+.bg-light {
+  background-color: hsl(var(--color-light));
+}
+
+.bg-white {
+  background-color: hsl(var(--color-white));
+}
+
+.text-dark {
+  color: hsl(var(--color-dark));
+}
+
+.text-light {
+  color: hsl(var(--color-light));
+}
+
+.text-white {
+  color: hsl(var(--color-white));
+}
+
+
+
+/* method 2
+ */
+/*
+:root {
+  --bg-color: 230 35% 7%;
+  --btn-color: 0 0% 100%;
+  --light-purple: 231  77% 90%;
+}
+*/
+
+/*
+Method 1:
+
+.bg {
+  background-color: var(--bg-color);
+}
+
+Method 2:
+
+.bg {
+  background-color: hsl(var(--bg-color));
+}
+
+Recommend to use method 2 because we can modify value directly.
+
+.i.e .bg-dark { background-color: hsl(--bg-dark) / .3) }
+
+
+*/
+

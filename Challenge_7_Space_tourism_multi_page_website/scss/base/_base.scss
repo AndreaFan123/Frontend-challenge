@@ -1,5 +1,7 @@
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+@import "./colors";
+@import "./typograph";
 
 *,
 *::before,
@@ -22,6 +24,10 @@ html:focus-within {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  background-color: hsl(var(--color-dark));
+  color: hsl(var(--color-white));
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
 }
@@ -29,6 +35,7 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
   margin: 0;
+  font-weight: var(--fw-400);
 }
 
 img, picture, video, canvas, svg {
