@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+// You can modify gap value with inline style i.e. style="--gap: 2rem" or
+// create anoter class for the specific property.
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+
+// This would hide content from the screen, but it would still be there in the DOM,
+// Unlike display: none, it would hide both on the screen and in the DOM.
+.screenreader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
