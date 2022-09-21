@@ -26,10 +26,13 @@ body {
   line-height: 1.5;
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
-  background-color: hsl(var(--color-dark));
+  // background-color: hsl(var(--color-dark));
   color: hsl(var(--color-white));
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
+  background-image: url("/Challenge_7_Space_tourism_multi_page_website/assets/home/background-home-desktop.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 p, h1, h2, h3, h4, h5, h6 {

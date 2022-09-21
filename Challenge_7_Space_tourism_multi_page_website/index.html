@@ -5,10 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
     rel="stylesheet">
@@ -17,50 +13,20 @@
 </head>
 
 <body>
-
-  <nav>
-    <ul class="navigation flex underline">
-      <li class="active"><a href="#" class="text-white uppercase letter-spacing-2"><span>01</span>Nav 1</a></li>
-      <li><a href="#" class="text-white uppercase letter-spacing-2"><span>02</span>Nav 2</a></li>
-      <li><a href="#" class="text-white uppercase letter-spacing-2"><span>03</span>Nav 3</a></li>
-    </ul>
-  </nav>
-
-  <main class="container">
-    <h1>Hello <span>World</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quis quos unde sunt quod sequi,
-      consequatur animi
-      quas culpa quam sed odio suscipit eligendi omnis excepturi. Numquam ducimus aspernatur necessitatibus, veniam
-      recusandae molestiae reiciendis ex illo placeat dolorem? Ut, maxime.</p>
-    <div class="flex">
-      <div>
-        <a href="#" class="large-btn flow uppercase bg-white text-dark ff-serif fs-600">Explore</a>
+  <header>
+    <nav class="nav-container flex">
+      <div class="nav-logo">
+        <a href="index.html"><img src="./assets/shared/logo.svg" alt="Space torism logo" /></a>
       </div>
-    </div>
-  </main>
-  <div class="planet-btn underline flex">
-    <button aria-selected="true" class="bg-dark text-white fs-400 ff-sans-cond letter-spacing-2 uppercase">Moon</button>
-    <button aria-selected="false"
-      class="bg-dark text-white fs-400 ff-sans-cond letter-spacing-2 uppercase">Mars</button>
-    <button aria-selected="false"
-      class="bg-dark text-white fs-400 ff-sans-cond letter-spacing-2 uppercase">Europa</button>
-    <button aria-selected="false"
-      class="bg-dark text-white fs-400 ff-sans-cond letter-spacing-2 uppercase">Titan</button>
-  </div>
-
-  <div class="dot-btn dot flex">
-    <button aria-selected="true"></button>
-    <button aria-selected="false"></button>
-    <button aria-selected="false"></button>
-    <button aria-selected="false"></button>
-  </div>
-
-  <div class="num-btn">
-    <button aria-selected="true" class="fs-500 ff-serif">1</button>
-    <button aria-selected=" false" class="fs-500 ff-serif">2</button>
-    <button aria-selected=" false" class="fs-500 ff-serif">3</button>
-  </div>
-
+      <div class="nav-line"></div>
+      <ul class="navigation-list flex underline">
+        <li class="active"><a href="#" class="text-white uppercase letter-spacing-2"><span>00</span>home</a></li>
+        <li><a href="#" class="text-white uppercase letter-spacing-2"><span>01</span>destination</a></li>
+        <li><a href="#" class="text-white uppercase letter-spacing-2"><span>02</span>crew</a></li>
+        <li><a href="#" class="text-white uppercase letter-spacing-2"><span>03</span>technology</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
 
 </html>
