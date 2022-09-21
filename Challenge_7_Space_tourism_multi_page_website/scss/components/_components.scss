@@ -1,5 +1,7 @@
 @import "../base/colors";
 
+
+/* Button hover & focus animation */
 .large-btn {
   display: grid;
   padding: 0 2em;
@@ -19,6 +21,33 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 600ms ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+
+/* Underline hover & focus animation */
+.navigation {
+  --gap: 8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--fs-400);
+
+  a {
+    text-decoration: none;
+
+    span {
+      margin-right: .5em;
+      font-weight: var(--fw-700);
+      color: hsl(var(--color-white)/.25);
+    }
   }
 }
 

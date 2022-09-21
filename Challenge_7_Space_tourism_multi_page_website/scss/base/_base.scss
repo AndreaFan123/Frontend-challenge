@@ -47,10 +47,6 @@ input, button, textarea, select {
   font: inherit;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
 // For accessibility
 @media (prefers-reduced-motion: reduce) {
   *,
