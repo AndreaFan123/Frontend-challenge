@@ -1,6 +1,3 @@
-@import "../base/colors";
-
-
 /* Button hover & focus animation */
 .large-btn {
   display: grid;
@@ -39,6 +36,8 @@
   padding: 0;
   margin: 0;
   font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+  --underline-gap: 1rem;
 
   a {
     text-decoration: none;
@@ -46,8 +45,23 @@
     span {
       margin-right: .5em;
       font-weight: var(--fw-700);
-      color: hsl(var(--color-white)/.25);
+      color: hsl(var(--color-white) / .8)
     }
   }
 }
 
+/* Underline */
+
+.underline > * {
+  border-bottom: .15rem solid hsl(var(--color-white) / 0);
+  padding: var(--underline-gap, .5rem) 0;
+
+  &:hover,
+  &:focus {
+    border-color: hsl(var(--color-white) / .25);
+  }
+}
+
+.underline > .active {
+  border-color: hsl(var(--color-white) / 1);
+}
