@@ -1,21 +1,3 @@
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.grid {
-  display: grid;
-  gap: var(--gap, 1rem);
-}
-
-// You can modify gap value with inline style i.e. style="--gap: 2rem" or
-// create anoter class for the specific property.
-
-.container {
-  padding: 2em;
-  margin-inline: auto;
-  max-width: 100rem;
-}
 
 
 // This would hide content from the screen, but it would still be there in the DOM,
