@@ -38,3 +38,9 @@ Table of contents:
 
 - [Live Demo](https://simple-price-grid-card.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_6_single-price-grid-component-)
+
+## Challenge 7 
+
+## Challenge 8 : Product card
+- [Live Demo](https://product-card-component-djiw.netlify.app/)
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_8_product_preview_card)
