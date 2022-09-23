@@ -117,14 +117,24 @@ h1, h2, h3, h4, p {
 }
 
 .card__btn {
-  width: 100%;
-  padding: 1rem 0;
   background-color: var(--main-brand-color);
   border-radius: 10px;
   border: none;
   color: var(--color-white);
+  cursor: pointer;
   font-size: var(--fs-medium);
-  font-family: var(--ff-mons)
+  font-family: var(--ff-mons);
+  padding: 1rem 0;
+  width: 100%;
+
+}
+
+.card__btn:hover {
+  background-color: var(--color-dark);
+}
+
+.card__btn:focus {
+  outline: 3px solid black;
 }
 
 .card__btn span {
