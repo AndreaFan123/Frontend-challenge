@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --main-brand-color: hsl(158, 36%, 37%);
+  --secondary-brand-color: hsl(30, 38%, 92%);
+  --color-dark: hsl(212, 21%, 14%);
+  --color-gray: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --fs-normal: 1rem;
+  --fs-medium: 1.25rem;
+  --fs-big: 2rem;
+  --fs-bigger: 2.5rem;
+
+
+  --ff-mons: 'Montserrat', sans-serif;
+  --ff-frau: 'Fraunces', serif;
+
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --mobile-width: 23.438rem;
+  --desktop-width: 90rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  font-family: var(--ff-mons)
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+
+.card__wrapper--grid {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.card__container--img {
+  width: 100%;
+  height: 520px;
+}
+.card__container--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px 0 0 10px;
+}
+
+.card__container--contents {
+  width: 100%;
+  height: 520px;
+  background-color: var(--color-white);
+  border-radius: 0 10px 10px 0;
+  padding: 2rem;
+}
+
+.card__title {
+  font-size: var(--fs-bigger);
+  color: var(--color-dark);
+  font-family: var(--ff-frau);
+  padding: 1rem 0;
+}
+
+.card__subtitle {
+  font-size: var(--fs-normal);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--color-gray);
+}
+
+.card__content {
+  font-size: var(--fs-normal);
+  color: var(--color-gray);
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.card__container--price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+
+.card__price {
+  font-size: var(--fs-big);
+  font-family: var(--ff-frau);
+  color: var(--main-brand-color);
+  padding-right: 1rem;
+
+}
+
+.card__price--original {
+  font-size: var(--fs-normal);
+  color: var(--color-gray);
+  text-decoration: line-through;
+}
+
+.card__btn {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--main-brand-color);
+  border-radius: 10px;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--fs-medium);
+  font-family: var(--ff-mons)
+}
+
+.card__btn span {
+  padding-right: .5rem;
+}
+
+@media  screen and (max-width: 640px) {
+
+  .card__title {
+    padding: .5rem 0;
+    font-size: var(--fs-big);
+  }
+  .card__container--contents {
+    padding: 1.5rem;
+  }
+}
+
+@media  screen and (max-width: 590px) {
+
+  .card__wrapper--grid {
+    grid-template-columns: none;
+  }
+
+  .card__container--img {
+    height: 300px;
+  }
+
+  .card__container--img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .card__title {
+    padding: .5rem 0;
+    font-size: var(--fs-big);
+  }
+  .card__container--contents {
+    padding: 1.5rem;
+    height: 420px;
+    border-radius: 0 0 10px 10px;
+  }
+}
