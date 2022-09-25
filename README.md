@@ -8,6 +8,7 @@ Table of contents:
 - [Challenge 4](#challenge-4--3-column-preview-card)
 - [Challenge 5](#challenge-5--landing-page)
 - [Challenge 6](#challenge-6--single-price-grid)
+- [Challenge 7](#challenge-7--product-card)
 
 ## Challenge 1 : Order summary
 
@@ -39,8 +40,6 @@ Table of contents:
 - [Live Demo](https://simple-price-grid-card.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_6_single-price-grid-component-)
 
-## Challenge 7 
-
-## Challenge 8 : Product card
+## Challenge 7 : Product card
 - [Live Demo](https://product-card-component-djiw.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_8_product_preview_card)
