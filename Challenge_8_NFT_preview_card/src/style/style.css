@@ -1,0 +1,19 @@
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --darkBlueMainBG: hsl(217, 54%, 11%);
+  --darkBlueCardBG: hsl(216, 50%, 16%);
+  --darkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --fontSize: 18px;
+
+  /* Font weight */
+  --fontWeightLieght: 300;
+  --fontWeightNormal: 400;
+  --fontWeightBold: 600;
+}
