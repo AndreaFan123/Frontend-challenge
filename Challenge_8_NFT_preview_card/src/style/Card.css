@@ -1,6 +1,104 @@
 .card--container {
   width: 350px;
   height: 600px;
-  border: 1px solid var(--white);
   border-radius: 20px;
+  background-color: var(--darkBlueCardBG);
+}
+
+.card--container-img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--container-img img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-img-hover-view {
+  position: absolute;
+  opacity: 0;
+}
+
+.card--container-img:hover:after {
+  content:'';
+  display:block;
+  background-color: aquamarine;
+  opacity: 1;
+  filter: alpha(opacity=30);
+}
+
+
+.card-descriptions-container {
+  height: 190px;
+  border-bottom: 1px solid #99999957;
+  margin: 0 25px 0 25px;
+}
+
+.card-descriptions-container h2 {
+  color: var(--white);
+  padding: 20px 0 20px 0;
+}
+
+.card-descriptions-container p {
+  color: var(--soft-blue);
+  font-weight: var(--fontWeightLieght);
+  padding-bottom: 25px;
+}
+
+.card--descriptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-description-price, 
+.card-description-time {
+  display: flex;
+  align-items: center;
+}
+
+
+.card-description-price span {
+  color: var(--cyan);
+  padding-left: 5px;
+}
+
+.card-description-time span {
+  color: var(--soft-blue); 
+  padding-left: 5px;
+}
+
+.card--avatar-container {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.card--avatar-img {
+  width: 40px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.card--avatar-img img {
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+
+.card--avatar-container p {
+  color: var(--soft-blue);
+}
+
+.card--avatar-container span {
+  color: var(--white);
 }
