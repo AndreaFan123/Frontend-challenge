@@ -1,0 +1,34 @@
+.summary-wrapper {
+  width: 560px;
+  height: 366px;
+  background-color: aquamarine;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+}
+
+.summary-cal-container {
+  width: 280px;
+  height: 350px;
+  background: rgb(120,87,255);
+  background: linear-gradient(180deg, rgba(120,87,255,1) 35%, rgba(46,43,233,1) 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  color: hsl(241, 100%, 89%);
+}  
+
+.summary-cal-circle {
+  width: 150px;
+  height: 150px;
+  background: rgb(78,33,202);
+  background: linear-gradient(180deg, rgba(78,33,202,1) 35%, rgba(36,33,202,0.7945772058823529) 100%);
+  border-radius: 50%;
+  position: relative;
+
+  span {
+    color: white;
+    position: absolute;
+  }
+}
