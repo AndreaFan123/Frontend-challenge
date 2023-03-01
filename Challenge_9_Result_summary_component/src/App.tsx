@@ -1,4 +1,4 @@
-import './App.css'
+import './sass/base.scss';
 import { Summary } from './components/Summary'
 
 function App() {

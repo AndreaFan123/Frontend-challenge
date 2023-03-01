@@ -1,6 +1,6 @@
-import { SummaryCal } from "./SummaryCal"
-import { SummaryList } from "./SummaryList"
-import "./summary.scss"
+import { SummaryCal } from "./SummaryCal";
+import { SummaryList } from "./SummaryList";
+import "../sass/summary.scss";
 
 export const Summary = () => {
   return (
