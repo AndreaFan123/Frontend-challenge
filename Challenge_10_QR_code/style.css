@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+.qrcode_card-container {
+  width: 100%;
+  max-width: 350px;
+  min-height: 520px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qrcode_card-code {
+  width: 310px;
+  height: 310px;
+  padding-top: 18px;
+}
+
+.qrcode_card-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.qrcode_card-text {
+  text-align: center;
+  width: 75%;
+}
+
+.qrcode_card-text h2 {
+  color: var(--color-dark-blue);
+}
+
+.qrcode_card-text p {
+  color: var(--color-grayish-blue);
+}
