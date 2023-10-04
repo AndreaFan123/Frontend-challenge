@@ -41,5 +41,15 @@ Table of contents:
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_6_single-price-grid-component-)
 
 ## Challenge 7 : Product card
+
 - [Live Demo](https://product-card-component-djiw.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_8_product_preview_card)
+
+## Challenge 8 : NFT preview card
+
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_8_NFT_preview_card)
+
+## Challenge 10: QR Code
+
+- [Live Demo](https://qrcode-card-frontend-challenge.netlify.app/)
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_QR_code)
