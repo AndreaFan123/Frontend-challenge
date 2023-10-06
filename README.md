@@ -47,6 +47,7 @@ Table of contents:
 
 ## Challenge 8 : NFT preview card
 
+- [Live Demo](https://nft-preview-card-frontend-challenge.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_8_NFT_preview_card)
 
 ## Challenge 10: QR Code
