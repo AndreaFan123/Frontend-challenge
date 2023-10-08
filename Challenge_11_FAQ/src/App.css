@@ -1,0 +1,12 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--color-soft-violet),
+    var(--color-soft-blue)
+  );
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
