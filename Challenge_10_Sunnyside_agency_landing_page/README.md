@@ -29,3 +29,39 @@ This includes the logo and the set of navigation links. It can be made reusable 
 
 - Social Media Icon Component:
   Each social media icon can be a button component that links to the respective social media page.
+
+## Styled-components steps
+
+- [Install styled-components](https://styled-components.com/docs/basics#installation)
+
+```bash
+pnpm i styled-components
+```
+
+- Display file name
+
+```bash
+pnpm i babel-plugin-styled-components
+```
+
+- Go to `vite.config.ts`
+
+```javascript
+export default defineConfig({
+  plugins: [
+    react({
+      babel: {
+        plugins: [
+          [
+            "babel-plugin-styled-components",
+            {
+              displayName: true,
+              fileName: false,
+            },
+          ],
+        ],
+      },
+    }),
+  ],
+});
+```

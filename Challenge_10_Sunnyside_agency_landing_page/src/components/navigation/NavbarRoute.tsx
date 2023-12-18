@@ -1,3 +1,6 @@
+import { NavbarRoutesListing } from "./Navbar.styled";
+import { LuAlignJustify } from "react-icons/lu";
+
 interface NavbarRouteProps {
   route: string;
   path: string;
@@ -5,11 +8,9 @@ interface NavbarRouteProps {
 
 const NavbarRoute = ({ route, path }: NavbarRouteProps) => {
   return (
-    <ul>
-      <li>
-        <a href={path}>{route}</a>
-      </li>
-    </ul>
+    <li>
+      <a href={path}>{route}</a>
+    </li>
   );
 };
 

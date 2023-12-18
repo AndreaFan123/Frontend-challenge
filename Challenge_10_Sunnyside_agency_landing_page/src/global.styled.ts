@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 :root {
   --font-Barlow: "Barlow", Avenir, Helvetica, Arial, sans-serif;
   --font-fraunces: "Fraunces", Georgia, "Times New Roman", Times, serif;
@@ -32,29 +33,13 @@
   --font-weight-fraunces-semibold: 700;
   --font-weight-fraunces-bold: 900;
 }
-
-a {
-  color: var(--white);
-  text-decoration: inherit;
-}
-a:hover {
-  color: var(--yellow);
-  font-weight: var(--font-weight-fraunces-semibold);
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
   font-size: 62.5%;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  letter-spacing: 10;
+  font-family: "Barlow", sans-serif;
 }
 
 button {
@@ -78,3 +63,13 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+`;
