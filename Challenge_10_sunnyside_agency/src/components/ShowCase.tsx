@@ -25,7 +25,7 @@ const showcase: ShowCaseProps[] = [
     title: "Stand out to the right audience",
     subtitle:
       "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.",
-    imgUrl: egg,
+    imgUrl: cup,
     alt: "Stand out to the right audience",
     cta: "Learn More",
   },
@@ -33,14 +33,14 @@ const showcase: ShowCaseProps[] = [
     title: "Graphic Design",
     subtitle:
       "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.",
-    imgUrl: egg,
+    imgUrl: cheery,
     alt: "Graphic Design",
   },
   {
     title: "Photography",
     subtitle:
       "Increase your credibility by getting the most stunning, high-quality photos that improve your business image",
-    imgUrl: egg,
+    imgUrl: orange,
     alt: "Photography",
   },
 ];
