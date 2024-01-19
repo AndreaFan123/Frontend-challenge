@@ -137,14 +137,50 @@ header {
   grid-template-columns: 1fr 1fr;
 
   .branding_section-content {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 2rem;
 
     h2 {
       font-size: 3rem;
+      font-family: var(--font-fraunces);
+      font-weight: var(--font-fraunces-weight-bolder);
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--color-very-dark-grayish-blue);
+      font-weight: var(--font-barlow-weight-medium);
+    }
+
+    a {
+      position: relative;
+      font-size: 1rem;
+      font-family: var(--font-fraunces);
+      text-transform: uppercase;
+      font-weight: var(--font-fraunces-weight-bolder);
+      z-index: 1;
+
+      span {
+        position: absolute;
+        top: 13px;
+        left: -4px;
+        z-index: -1;
+        width: 125px;
+        border: 5px solid var(--color-yellow);
+        border-radius: 5px;
+        opacity: 0.5;
+      }
+
+      .reverse {
+        border: 5px solid var(--color-soft-red);
+        opacity: 0.5;
+      }
     }
   }
 

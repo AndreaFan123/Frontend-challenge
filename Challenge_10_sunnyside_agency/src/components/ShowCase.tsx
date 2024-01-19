@@ -1,7 +1,7 @@
 import egg from "../assets/images/desktop/image-transform.jpg";
 import cup from "../assets/images/desktop/image-stand-out.jpg";
 import cheery from "../assets/images/desktop/image-graphic-design.jpg";
-import orange from "../assets/images/desktop/image-photography.jpg";
+import orangeImg from "../assets/images/desktop/image-photography.jpg";
 import BrandingCard from "./BrandingCard";
 
 export interface ShowCaseProps {
@@ -40,7 +40,7 @@ const showcase: ShowCaseProps[] = [
     title: "Photography",
     subtitle:
       "Increase your credibility by getting the most stunning, high-quality photos that improve your business image",
-    imgUrl: orange,
+    imgUrl: orangeImg,
     alt: "Photography",
   },
 ];
@@ -50,6 +50,9 @@ export default function ShowCase() {
     <main>
       <section>
         <BrandingCard item={showcase[0]} />
+      </section>
+      <section>
+        <BrandingCard item={showcase[1]} reverse />
       </section>
     </main>
   );
