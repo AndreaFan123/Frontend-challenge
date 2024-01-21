@@ -39,9 +39,8 @@ export default function BrandingCard({
       </div>
     </>
   );
+
   return (
-    <section className="branding_section">
-      {reverse ? reverseEle : normalEle}
-    </section>
+    <div className="branding_section">{reverse ? reverseEle : normalEle}</div>
   );
 }

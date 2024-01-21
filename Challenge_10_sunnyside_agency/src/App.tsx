@@ -1,12 +1,13 @@
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import ShowCase from "./components/ShowCase";
+import TestimonialListing from "./components/TestimonialListing";
 
 function App() {
   return (
     <>
       <Header />
       <ShowCase />
+      <TestimonialListing />
     </>
   );
 }
