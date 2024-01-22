@@ -317,3 +317,9 @@ header {
   }
 }
 /* ================================== */
+
+/* ====== Image showcase Sections ====== */
+.imageShowcase_container {
+  display: flex;
+}
+/* ===================================== */
