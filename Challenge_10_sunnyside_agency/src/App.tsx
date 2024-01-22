@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ImageListing from "./components/ImageListing";
 import ShowCase from "./components/ShowCase";
@@ -10,6 +11,7 @@ function App() {
       <ShowCase />
       <TestimonialListing />
       <ImageListing />
+      <Footer />
     </>
   );
 }
