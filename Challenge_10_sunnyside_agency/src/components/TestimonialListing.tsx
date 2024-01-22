@@ -49,7 +49,7 @@ export default function TestimonialListing() {
   return (
     <section className="testimonial_container">
       <h3>Client testimonials</h3>
-      <div>
+      <div className="testimonial_card-container">
         {Testimonials.map((item) => (
           <TestimonialCard key={item.id} item={item} />
         ))}
