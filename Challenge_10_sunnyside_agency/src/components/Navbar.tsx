@@ -1,7 +1,8 @@
-interface NavLinks {
+export interface NavLinks {
   id: string;
   title: string;
   url: string;
+  imgUrl?: string;
 }
 
 const navlinks: NavLinks[] = [
