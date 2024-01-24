@@ -1,3 +1,5 @@
+import { useState } from "react";
+import mobileMenu from "../assets/images/icon-hamburger.svg";
 export interface NavLinks {
   id: string;
   title: string;
@@ -5,7 +7,7 @@ export interface NavLinks {
   imgUrl?: string;
 }
 
-const navlinks: NavLinks[] = [
+const navLinks: NavLinks[] = [
   { id: "about", title: "About", url: "/about" },
   { id: "services", title: "Services", url: "/services" },
   { id: "projects", title: "Projects", url: "/projects" },
@@ -13,11 +15,18 @@ const navlinks: NavLinks[] = [
 ];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar_links">
       <a href="/">Sunnyside</a>
+
+      <button className="mobile_navbar-hamburger">
+        <img src={mobileMenu} alt="mobile menu" />
+      </button>
+
       <ul>
-        {navlinks.map((link) => (
+        {navLinks.map((link) => (
           <li key={link.id}>
             <a href={link.url}>{link.title}</a>
           </li>

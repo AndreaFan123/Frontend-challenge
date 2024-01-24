@@ -55,10 +55,10 @@ const imgCoverShowCase: ShowCaseProps[] = [
 export default function ShowCase() {
   return (
     <main>
-      <section>
+      <section className="branding_normal">
         <BrandingCard item={showcase[0]} />
       </section>
-      <section>
+      <section className="branding_reverse">
         <BrandingCard item={showcase[1]} reverse />
       </section>
       <section className="branding_cover-flex">
