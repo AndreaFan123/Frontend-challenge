@@ -3,7 +3,6 @@ import "../index.css";
 
 export default function BrandingCard({
   item,
-  reverse,
 }: {
   item: ShowCaseProps;
   reverse?: boolean;

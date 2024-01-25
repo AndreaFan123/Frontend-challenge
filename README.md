@@ -54,3 +54,8 @@ Table of contents:
 
 - [Live Demo](https://qrcode-card-frontend-challenge.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_QR_code)
+
+## Challenge 10: Sunnyside Agency
+
+- [Live Demo](https://sunnyside-agency-10.netlify.app/)
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_sunnyside_agency)
