@@ -9,6 +9,9 @@ Table of contents:
 - [Challenge 5](#challenge-5--landing-page)
 - [Challenge 6](#challenge-6--single-price-grid)
 - [Challenge 7](#challenge-7--product-card)
+- [Challenge 8](#challenge-8--nft-preview-card)
+- [Challenge 9](#challenge-9-qr-code)
+- [Challenge 10](#challenge-10-sunnyside-agency)
 
 ## Challenge 1 : Order summary
 
