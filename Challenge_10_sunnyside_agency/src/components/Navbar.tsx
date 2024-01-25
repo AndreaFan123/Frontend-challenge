@@ -8,14 +8,18 @@ export interface NavLinks {
 }
 
 const navLinks: NavLinks[] = [
-  { id: "about", title: "About", url: "/about" },
-  { id: "services", title: "Services", url: "/services" },
-  { id: "projects", title: "Projects", url: "/projects" },
-  { id: "contact", title: "Contact", url: "/contact" },
+  { id: "about", title: "About", url: "#" },
+  { id: "services", title: "Services", url: "#" },
+  { id: "projects", title: "Projects", url: "#" },
+  { id: "contact", title: "Contact", url: "#" },
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState<string | null>(null);
+
+  const handleLinkClick = (id: string) => {
+    setActiveLink(id);
+  };
 
   return (
     <nav className="navbar_links">
@@ -28,7 +32,13 @@ export default function Navbar() {
       <ul>
         {navLinks.map((link) => (
           <li key={link.id}>
-            <a href={link.url}>{link.title}</a>
+            <a
+              href={link.url}
+              onClick={() => handleLinkClick(link.id)}
+              className={`${activeLink === link.id ? "active" : ""}`}
+            >
+              {link.title}
+            </a>
           </li>
         ))}
       </ul>
