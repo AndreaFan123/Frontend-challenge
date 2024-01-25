@@ -101,6 +101,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     font-size: 3rem;
     font-family: var(--font-fraunces);
     color: var(--color-white);
@@ -109,7 +110,7 @@ header {
     letter-spacing: 8px;
     text-transform: uppercase;
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 1024px) {
       font-size: 1.5rem;
       text-align: center;
       margin-top: 2rem;
@@ -130,12 +131,24 @@ header {
     display: flex;
     gap: 64px;
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       display: none;
+    }
+
+    a.active {
+      cursor: pointer;
+      font-family: var(--font-fraunces);
+      font-weight: var(--font-fraunces-weight-bolder);
+      color: var(--color-very-dark-desaturated-blue);
+      background-color: var(--color-white);
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-size: 1.2rem;
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     padding: 1rem;
   }
 }
@@ -150,7 +163,7 @@ header {
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -228,7 +241,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column-reverse;
 
@@ -311,7 +324,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column-reverse;
 
@@ -354,7 +367,7 @@ header {
         background-position: center;
       }
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 1024px) {
         width: auto;
         height: 600px;
 
@@ -384,7 +397,7 @@ header {
         font-weight: var(--font-barlow-weight-medium);
       }
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 768px) {
         bottom: 80px;
 
         h2 {
@@ -468,7 +481,7 @@ header {
       }
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       grid-template-columns: none;
     }
   }
