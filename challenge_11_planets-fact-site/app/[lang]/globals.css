@@ -17,10 +17,15 @@ body {
 body {
   width: 100%;
   height: 100%;
-  background-color: var(--color-dark-blue);
   color: var(--color-white);
   font-size: 62.5%;
   line-height: 1.5;
+  font-family: font-antonio, sans-serif;
+  background-image: url(../../public/assets/background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @layer components {

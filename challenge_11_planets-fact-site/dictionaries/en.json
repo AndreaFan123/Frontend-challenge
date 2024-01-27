@@ -1,0 +1,16 @@
+{
+  "planets": {
+    "mercury": "Mercury",
+    "venus": "Venus",
+    "earth": "Earth",
+    "mars": "Mars",
+    "jupiter": "Jupiter",
+    "saturn": "Saturn",
+    "uranus": "Uranus",
+    "neptune": "Neptune"
+  },
+  "greeting": {
+    "hello": "Hello! 👋",
+    "welcome": "Welcome to planet Fact"
+  }
+}
