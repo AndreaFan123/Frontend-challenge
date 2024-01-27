@@ -1,0 +1,16 @@
+{
+  "planets": {
+    "mercury": "水星",
+    "venus": "金星",
+    "earth": "地球",
+    "mars": "火星",
+    "jupiter": "木星",
+    "saturn": "土星",
+    "uranus": "天王星",
+    "neptune": "海王星"
+  },
+  "greeting": {
+    "hello": "嗨！👋",
+    "welcome": "歡迎來到 planet Fact"
+  }
+}
