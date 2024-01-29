@@ -9,7 +9,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
       <h1 className="text-[5rem] lg:text-[10rem] text-white">
         {dictionary.greeting['hello']}
       </h1>
-      <h2 className="text-white text-[3rem] lg:text-[5rem]">
+      <h2 className="text-white text-center text-[3rem] lg:text-[5rem]">
         {dictionary.greeting['welcome']}
       </h2>
     </main>
