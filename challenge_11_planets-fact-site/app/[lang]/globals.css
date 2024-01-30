@@ -41,30 +41,30 @@ body {
 
 @layer utilities {
   .planetTitle {
-    @apply lg:text-[8rem] font-medium color-white font-font-antonio;
+    @apply lg:text-[8rem] font-medium text-white font-font-antonio;
   }
 
   .planetDescription {
-    @apply lg:text-[1.4rem] font-normal color-white font-spartan;
+    @apply lg:text-[1.4rem] font-normal text-white font-spartan;
   }
 
   .planetSource {
-    @apply color-darkGrey font-spartan lg:text-[1.4rem];
+    @apply text-darkGrey font-spartan lg:text-[1.4rem];
   }
 
   .planetIntroText {
-    @apply lg:text-[1.1rem] font-spartan font-bold color-lightGrey uppercase;
+    @apply lg:text-[1.1rem] font-spartan font-bold text-lightGrey uppercase;
   }
 
   .playnetIntroNumbers {
-    @apply lg:text-[4rem] uppercase color-white font-antonio;
+    @apply lg:text-[4rem] uppercase text-white font-antonio;
   }
 
   .planetActionButtonTextNum {
-    @apply lg:text-[1.2rem] color-lightGrey font-spartan font-bold;
+    @apply lg:text-[1.2rem] text-lightGrey font-spartan font-bold;
   }
 
   .planetActionButtonText {
-    @apply uppercase color-white font-spartan tracking-wider;
+    @apply uppercase text-white font-spartan tracking-wider;
   }
 }
