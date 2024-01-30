@@ -104,7 +104,7 @@ export default function Navbar({
       <Link href="/" className="text-[1.5rem] lg:text-[2rem] xl:w-[30%]">
         The Planets
       </Link>
-      <button className="md:hidden" type="button" onClick={handleToggle}>
+      <button className="md:hidden" onClick={handleToggle}>
         <IoMenu size={30} color={isOpen ? '#838391' : '#ffffff'} />
       </button>
       <ul className="hidden md:flex md:gap-12 md:justify-evenly xl:justify-between items-center">
