@@ -4,6 +4,7 @@ import mercuryGeology from '@/public/assets/mercury/mercury-geo.png';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/get-dictionary';
 import { PlanetContent, PlanetContentProps } from '../components/PlanetContent';
+import { ActionButton } from '../components/ActionButtons';
 
 export default async function MercuryPage({
   params,
@@ -21,6 +22,7 @@ export default async function MercuryPage({
     planetGeologyContent: dictionary.mercury.surfaceGeology,
     planetName: dictionary.planets.mercury,
     planetAlt: dictionary.planets.mercury,
+    planetSourceLinkText: 'Wikipidia',
     planetSourceLink: '/',
     rotationTime: '58.6',
     revolutionTime: '87.97',
@@ -29,8 +31,9 @@ export default async function MercuryPage({
   };
 
   return (
-    <main className="text-white w-full max-w-full px-4 my-8">
-      <PlanetContent items={mercuryContent} />
+    <main className="text-white w-full max-w-full">
+      <ActionButton dictionary={dictionary} />
+      <PlanetContent items={mercuryContent} dictionary={dictionary} />
     </main>
   );
 }

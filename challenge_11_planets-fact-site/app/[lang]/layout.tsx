@@ -32,7 +32,7 @@ export default async function RootLayout({
     <html lang={params.lang}>
       <body className={antonio.className}>
         <Navbar dictionary={dictionary.planets} lang={params.lang} />
-        <ActionButton dictionary={dictionary} />
+        {/* <ActionButton dictionary={dictionary} /> */}
         {children}
       </body>
     </html>

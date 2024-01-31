@@ -37,6 +37,8 @@ export const ActionButton = ({
         return 'border-saturn border-b-4 pb-3 ';
       case 'uranus':
         return 'border-uranus border-b-4 pb-3 ';
+      case 'neptune':
+        return 'border-neptune border-b-4 pb-3 ';
       default:
         return '';
     }
