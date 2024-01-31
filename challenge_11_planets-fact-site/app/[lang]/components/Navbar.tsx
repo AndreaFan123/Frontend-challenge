@@ -5,6 +5,7 @@ import LangSwitcher from './LangSwitcher';
 import { IoMenu, IoChevronForward } from 'react-icons/io5';
 import { type getDictionary } from '../../../get-dictionary';
 import { useState } from 'react';
+import { Locale } from '@/i18n-config';
 
 interface NavbarType {
   title: string;
@@ -14,49 +15,51 @@ interface NavbarType {
 
 export default function Navbar({
   dictionary,
+  lang,
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>['planets'];
+  lang: Locale;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const navbarLinks: NavbarType[] = [
     {
       title: dictionary.mercury,
-      url: '/mercury',
+      url: `/${lang}/mercury`,
       color: 'bg-mercuryMenu',
     },
     {
       title: dictionary.venus,
-      url: '/venus',
+      url: `/${lang}/venus`,
       color: 'bg-venusMenu',
     },
     {
       title: dictionary.earth,
-      url: '/earth',
+      url: `/${lang}/earth`,
       color: 'bg-earthMenu',
     },
     {
       title: dictionary.mars,
-      url: '/mars',
+      url: `/${lang}/mars`,
       color: 'bg-marsMenu',
     },
     {
       title: dictionary.jupiter,
-      url: '/jupiter',
+      url: `/${lang}/jupiter`,
       color: 'bg-jupiterMenu',
     },
     {
       title: dictionary.saturn,
-      url: '/saturn',
+      url: `/${lang}/saturn`,
       color: 'bg-saturnMenu',
     },
     {
       title: dictionary.uranus,
-      url: '/uranus',
+      url: `/${lang}/uranus`,
       color: 'bg-uranusMenu',
     },
     {
       title: dictionary.neptune,
-      url: '/neptune',
+      url: `/${lang}/neptune`,
       color: 'bg-neptuneMenu',
     },
   ];
@@ -70,7 +73,7 @@ export default function Navbar({
       {navbarLinks.map((link) => (
         <li
           key={link.title}
-          className="flex w-full p-4 border-b border-lightGrey justify-between"
+          className="flex w-full p-4 border-b border-lightGrey/40 justify-between"
         >
           <Link href={link.url} className="flex items-center gap-3">
             <span
@@ -100,7 +103,7 @@ export default function Navbar({
   );
 
   return (
-    <nav className="flex justify-between w-full p-4 md:fixed md:z-20 md:w-full md:bg-darkBlue text-white md:flex md:flex-col md:items-center md:py-4 md:gap-3  xl:flex-row xl:w-full lg:justify-between lg:items-center uppercase tracking-wide border-b border-lightGrey lg:py-[27px] lg:px-[32px]">
+    <nav className="flex justify-between w-full p-4 md:fixed md:z-20 md:w-full md:bg-darkBlue text-white md:flex md:flex-col md:items-center md:py-4 md:gap-3  xl:flex-row xl:w-full lg:justify-between lg:items-center uppercase tracking-wide border-b border-lightGrey/40 lg:py-[27px] lg:px-[32px]">
       <Link href="/" className="text-[1.5rem] lg:text-[2rem] xl:w-[30%]">
         The Planets
       </Link>
@@ -110,7 +113,7 @@ export default function Navbar({
       <ul className="hidden md:flex md:gap-12 md:justify-evenly xl:justify-between items-center">
         {renderDesktopMenu}
       </ul>
-      <ul className="absolute shadow-lg shadow-slate-800 top-[69px] left-0 w-full md:hidden bg-darkBlue">
+      <ul className="absolute shadow-lg z-10 shadow-slate-800 top-[69px] left-0 w-full md:hidden bg-darkBlue">
         {isOpen && renderMobileMenu}
       </ul>
     </nav>

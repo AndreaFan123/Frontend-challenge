@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import Navbar from '@/app/[lang]/components/Navbar';
+
 import LangSwitcher from '@/app/[lang]/components/LangSwitcher';
+import Navbar from '@/app/[lang]/components/Navbar';
 
 describe('Navbar', () => {
   const dictionary = {
@@ -16,13 +17,13 @@ describe('Navbar', () => {
   };
 
   it('renders navbar links correctly', () => {
-    render(<Navbar dictionary={dictionary} />);
+    render(<Navbar dictionary={dictionary} lang={'en'} />);
     expect(screen.getByText('Mercury')).toBeInTheDocument();
   });
 
   it('redirect to mercury page', () => {
-    render(<Navbar dictionary={dictionary} />);
-    expect(screen.getByText('Mercury')).toHaveAttribute('href', '/mercury');
+    render(<Navbar dictionary={dictionary} lang={'en'} />);
+    expect(screen.getByText('Mercury')).toHaveAttribute('href', '/en/mercury');
   });
 
   it('render LanguageSwitcher component', () => {
@@ -32,7 +33,7 @@ describe('Navbar', () => {
   it('shows mobile menu button on small screens', () => {
     global.innerWidth = 500;
     global.dispatchEvent(new Event('resize'));
-    render(<Navbar dictionary={dictionary} />);
+    render(<Navbar dictionary={dictionary} lang={'en'} />);
     expect(screen.getByRole('button')).toBeInTheDocument();
   });
 });
