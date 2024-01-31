@@ -32,7 +32,6 @@ export default async function uranusPage({
 
   return (
     <main className="text-white w-full max-w-full">
-      <ActionButton dictionary={dictionary} />
       <PlanetContent items={uranusContent} dictionary={dictionary} />
     </main>
   );

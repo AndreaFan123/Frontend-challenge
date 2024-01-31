@@ -32,7 +32,6 @@ export default async function neptunePage({
 
   return (
     <main className="text-white w-full max-w-full">
-      <ActionButton dictionary={dictionary} />
       <PlanetContent items={neptuneContent} dictionary={dictionary} />
     </main>
   );

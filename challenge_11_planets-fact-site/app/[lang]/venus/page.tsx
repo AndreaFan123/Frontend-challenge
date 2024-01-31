@@ -32,7 +32,6 @@ export default async function VenusPage({
 
   return (
     <main className="text-white w-full max-w-full">
-      <ActionButton dictionary={dictionary} />
       <PlanetContent items={venusContent} dictionary={dictionary} />
     </main>
   );

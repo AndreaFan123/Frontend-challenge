@@ -1,8 +1,12 @@
+'use client';
+
 import { getDictionary } from '@/get-dictionary';
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { PlanetStatisticsBox } from './PlanetStatisticsBox';
+import { ActionButton } from './ActionButtons';
+import { useState } from 'react';
 
 export interface PlanetContentProps {
   planetOverviewImage: StaticImageData;
@@ -28,6 +32,8 @@ export const PlanetContent = ({
   items: PlanetContentProps;
   dictionary: Awaited<ReturnType<typeof getDictionary>>;
 }) => {
+  const [isActiveBtn, setIsActiveBtn] = useState(0);
+
   const usingHoursForRotation =
     items.planetName === dictionary.planets.jupiter ||
     items.planetName === dictionary.planets.saturn ||
@@ -41,39 +47,44 @@ export const PlanetContent = ({
     items.planetName === dictionary.planets.uranus ||
     items.planetName === dictionary.planets.neptune;
   return (
-    <section className="my-16 px-[24px] flex flex-col gap-16 items-center">
-      <figure>
-        <Image
-          src={items.planetOverviewImage}
-          alt={items.planetAlt}
-          width={0}
-          height={0}
-          loading="lazy"
-          className="self-center w-[150px] h-auto"
+    <>
+      <ActionButton dictionary={dictionary} />
+      <section className="my-16 px-[24px] flex flex-col gap-16 items-center">
+        <figure>
+          <Image
+            src={items.planetOverviewImage}
+            alt={items.planetAlt}
+            width={0}
+            height={0}
+            loading="lazy"
+            className="self-center w-[150px] h-auto"
+          />
+        </figure>
+        <article className="items-center text-center flex flex-col gap-4">
+          <h1 className="text-[2.5rem]">{items.planetName}</h1>
+          <p className="font-spartan text-[1rem] font-light">
+            {items.planetOverviewContent}
+          </p>
+          <div className="font-spartan flex items-center text-[.8rem] font-light text-lightGrey">
+            <span className="inline-block">
+              {dictionary.generalText.source}
+            </span>
+            <Link href={items.planetSourceLink} className="pr-1 underline">
+              {items.planetSourceLinkText}
+            </Link>
+            <FaExternalLinkSquareAlt />
+          </div>
+        </article>
+        <PlanetStatisticsBox
+          rotation={items.rotationTime}
+          revolution={items.revolutionTime}
+          radius={items.radius}
+          averTem={items.temperature}
+          dictionary={dictionary}
+          usingHoursForRotation={usingHoursForRotation}
+          usingYearsForRevolution={usingYearsForRevolution}
         />
-      </figure>
-      <article className="items-center text-center flex flex-col gap-4">
-        <h1 className="text-[2.5rem]">{items.planetName}</h1>
-        <p className="font-spartan text-[1rem] font-light">
-          {items.planetOverviewContent}
-        </p>
-        <div className="font-spartan flex items-center text-[.8rem] font-light text-lightGrey">
-          <span className="inline-block">{dictionary.generalText.source}</span>
-          <Link href={items.planetSourceLink} className="pr-1 underline">
-            {items.planetSourceLinkText}
-          </Link>
-          <FaExternalLinkSquareAlt />
-        </div>
-      </article>
-      <PlanetStatisticsBox
-        rotation={items.rotationTime}
-        revolution={items.revolutionTime}
-        radius={items.radius}
-        averTem={items.temperature}
-        dictionary={dictionary}
-        usingHoursForRotation={usingHoursForRotation}
-        usingYearsForRevolution={usingYearsForRevolution}
-      />
-    </section>
+      </section>
+    </>
   );
 };

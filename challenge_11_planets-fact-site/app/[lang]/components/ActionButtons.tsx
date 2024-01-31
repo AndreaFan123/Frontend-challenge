@@ -19,8 +19,6 @@ export const ActionButton = ({
   const indexPath = usePathname().split('/')[2] === undefined;
   const activePath = usePathname().split('/')[2];
 
-  console.log(activePath);
-
   const renderBottomActiveLine = (path: string) => {
     switch (path) {
       case 'mercury':

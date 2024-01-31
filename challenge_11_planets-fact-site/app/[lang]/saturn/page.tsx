@@ -32,7 +32,6 @@ export default async function saturnPage({
 
   return (
     <main className="text-white w-full max-w-full">
-      <ActionButton dictionary={dictionary} />
       <PlanetContent items={saturnContent} dictionary={dictionary} />
     </main>
   );

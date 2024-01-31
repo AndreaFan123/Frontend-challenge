@@ -32,7 +32,6 @@ export default async function MercuryPage({
 
   return (
     <main className="text-white w-full max-w-full">
-      <ActionButton dictionary={dictionary} />
       <PlanetContent items={mercuryContent} dictionary={dictionary} />
     </main>
   );
