@@ -61,7 +61,7 @@ export const ActionButton = ({
   ];
 
   const renderMobileActionButtons = (
-    <div className="text-white pt-3 px-4 relative border-b border-lightGrey/40 tracking-wide flex justify-between text-[1rem]">
+    <div className="text-white pt-3 bg-darkBlue px-4 relative border-t border-b border-lightGrey/40 tracking-wide flex justify-between text-[1rem]">
       {actionButtons.map((actionButton, indx) => (
         <button
           className={`cursor-pointer ${
@@ -87,7 +87,9 @@ export const ActionButton = ({
   return (
     <>
       {indexPath ? null : (
-        <div className="w-full md:hidden">{renderMobileActionButtons}</div>
+        <div className="w-full fixed pt-16 md:hidden">
+          {renderMobileActionButtons}
+        </div>
       )}
     </>
   );

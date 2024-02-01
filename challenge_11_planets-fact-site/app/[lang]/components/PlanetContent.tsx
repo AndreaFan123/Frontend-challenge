@@ -49,7 +49,7 @@ export const PlanetContent = ({
   return (
     <>
       <ActionButton dictionary={dictionary} />
-      <section className="my-16 px-[24px] flex flex-col gap-16 items-center">
+      <section className="px-[24px] pt-48 pb-12 md:pt-60  flex flex-col gap-16 items-center">
         <figure>
           <Image
             src={items.planetOverviewImage}

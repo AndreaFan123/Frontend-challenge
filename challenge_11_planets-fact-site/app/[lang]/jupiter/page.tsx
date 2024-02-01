@@ -5,6 +5,7 @@ import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/get-dictionary';
 import { PlanetContent, PlanetContentProps } from '../components/PlanetContent';
 import { ActionButton } from '../components/ActionButtons';
+import { PlanetPageLayout } from '../layout/PlanetPageLayout';
 
 export default async function jupiterPage({
   params,
@@ -31,8 +32,8 @@ export default async function jupiterPage({
   };
 
   return (
-    <main className="text-white w-full max-w-full">
+    <PlanetPageLayout>
       <PlanetContent items={jupiterContent} dictionary={dictionary} />
-    </main>
+    </PlanetPageLayout>
   );
 }
