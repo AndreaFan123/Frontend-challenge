@@ -110,7 +110,7 @@ export default function Navbar({
       <button className="md:hidden" onClick={handleToggle}>
         <IoMenu size={30} color={isOpen ? '#838391' : '#ffffff'} />
       </button>
-      <ul className="hidden md:flex md:gap-12 md:justify-evenly xl:justify-between items-center">
+      <ul className="hidden md:flex md:gap-7 lg:gap-16 md:justify-evenly xl:justify-between items-center">
         {renderDesktopMenu}
       </ul>
       <ul className="absolute shadow-lg z-10 shadow-slate-800 top-[69px] left-0 w-full md:hidden bg-darkBlue">
