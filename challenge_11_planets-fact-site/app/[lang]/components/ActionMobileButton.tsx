@@ -4,13 +4,13 @@ import { getDictionary } from '@/get-dictionary';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-interface ActionButtonProps {
-  mobileTitle: string;
+export interface ActionButtonProps {
+  mobileTitle?: string;
   webTitle?: string;
   onClick: () => void;
 }
 
-export const ActionButton = ({
+export const ActionMobileButton = ({
   dictionary,
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>;
@@ -19,9 +19,7 @@ export const ActionButton = ({
   const indexPath = usePathname().split('/')[2] === undefined;
   const activePath = usePathname().split('/')[2];
 
-  console.log(activePath);
-
-  const renderBottomActiveLine = (path: string) => {
+  const renderButtonActiveLine = (path: string) => {
     switch (path) {
       case 'mercury':
         return 'border-mercury border-b-4 pb-3 ';
@@ -44,52 +42,47 @@ export const ActionButton = ({
     }
   };
 
-  const actionButtons: ActionButtonProps[] = [
+  const actionMobileButtons: ActionButtonProps[] = [
     {
       mobileTitle: dictionary.mobileActionButtons.overview,
-      webTitle: dictionary.webActionButtons.overview,
       onClick: () => {},
     },
     {
       mobileTitle: dictionary.mobileActionButtons.internalStructure,
-      webTitle: dictionary.webActionButtons.internalStructure,
       onClick: () => {},
     },
     {
       mobileTitle: dictionary.mobileActionButtons.surfaceGeology,
-      webTitle: dictionary.webActionButtons.surfaceGeology,
       onClick: () => {},
     },
   ];
 
-  const renderMobileActionButtons = (
-    <div className="text-white pt-3 px-4 relative border-b border-lightGrey/40 tracking-wide flex justify-between text-[1rem]">
-      {actionButtons.map((actionButton, indx) => (
-        <button
-          className={`cursor-pointer ${
-            indx === defaultActive
-              ? renderBottomActiveLine(activePath)
-              : 'border-b-4 pb-3 border-transparent'
-          }`}
-          key={actionButton.mobileTitle}
-          onClick={() => setDefaultActive(indx)}
-        >
-          <span
-            className={`${
-              indx === defaultActive ? 'text-white' : 'text-lightGrey'
-            }`}
-          >
-            {actionButton.mobileTitle}
-          </span>
-        </button>
-      ))}
-    </div>
-  );
-
   return (
     <>
       {indexPath ? null : (
-        <div className="w-full md:hidden">{renderMobileActionButtons}</div>
+        <div className="w-full fixed pt-16 md:hidden">
+          <div className="text-white pt-3 bg-darkBlue px-4 relative border-t border-b border-lightGrey/40 tracking-wide flex justify-between text-[1rem]">
+            {actionMobileButtons.map((mobileButton, indx) => (
+              <button
+                className={`cursor-pointer ${
+                  indx === defaultActive
+                    ? renderButtonActiveLine(activePath)
+                    : 'border-b-4 pb-3 border-transparent'
+                }`}
+                key={mobileButton.mobileTitle}
+                onClick={() => setDefaultActive(indx)}
+              >
+                <span
+                  className={`${
+                    indx === defaultActive ? 'text-white' : 'text-lightGrey'
+                  }`}
+                >
+                  {mobileButton.mobileTitle}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
       )}
     </>
   );

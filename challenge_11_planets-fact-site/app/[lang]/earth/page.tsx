@@ -4,7 +4,8 @@ import earthGeo from '@/public/assets/earth/earth-geo.png';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/get-dictionary';
 import { PlanetContent, PlanetContentProps } from '../components/PlanetContent';
-import { ActionButton } from '../components/ActionButtons';
+import { ActionButton } from '../components/ActionMobileButton';
+import { PlanetPageLayout } from '../layout/PlanetPageLayout';
 
 export default async function earthPage({
   params,
@@ -31,9 +32,8 @@ export default async function earthPage({
   };
 
   return (
-    <main className="text-white w-full max-w-full">
-      <ActionButton dictionary={dictionary} />
+    <PlanetPageLayout>
       <PlanetContent items={earthContent} dictionary={dictionary} />
-    </main>
+    </PlanetPageLayout>
   );
 }

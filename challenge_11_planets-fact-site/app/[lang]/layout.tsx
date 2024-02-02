@@ -4,7 +4,7 @@ import { i18n, type Locale } from '../../i18n-config';
 import { getDictionary } from '@/get-dictionary';
 import { Antonio } from 'next/font/google';
 import './globals.css';
-import { ActionButton } from './components/ActionButtons';
+import { ActionButton } from './components/ActionMobileButton';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({
@@ -32,7 +32,6 @@ export default async function RootLayout({
     <html lang={params.lang}>
       <body className={antonio.className}>
         <Navbar dictionary={dictionary.planets} lang={params.lang} />
-        {/* <ActionButton dictionary={dictionary} /> */}
         {children}
       </body>
     </html>
