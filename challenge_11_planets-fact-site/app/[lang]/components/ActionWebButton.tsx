@@ -7,10 +7,10 @@ import { ActionButtonProps } from './ActionMobileButton';
 
 export const ActionWebButton = ({
   dictionary,
-}: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>;
-}) => {
-  const [defaultActive, setDefaultActive] = useState(0);
+  activeIndex,
+  onActive,
+}: ActionButtonProps) => {
+  // const [defaultActive, setDefaultActive] = useState(0);
   const indexPath = usePathname().split('/')[2] === undefined;
   const activePath = usePathname().split('/')[2];
 
@@ -37,18 +37,15 @@ export const ActionWebButton = ({
     }
   };
 
-  const actionWebButtons: ActionButtonProps[] = [
+  const actionWebButtons = [
     {
       webTitle: dictionary.webActionButtons.overview,
-      onClick: () => {},
     },
     {
       webTitle: dictionary.webActionButtons.internalStructure,
-      onClick: () => {},
     },
     {
       webTitle: dictionary.webActionButtons.surfaceGeology,
-      onClick: () => {},
     },
   ];
 
@@ -57,9 +54,9 @@ export const ActionWebButton = ({
       {actionWebButtons.map((webButton, indx) => (
         <button
           key={webButton.webTitle}
-          onClick={webButton.onClick}
+          onClick={() => onActive(indx)}
           className={`cursor-pointer text-base font-spartan uppercase tracking-wide ${
-            indx === defaultActive
+            indx === activeIndex
               ? renderButtonActiveBg(activePath)
               : 'border border-lightGrey/40 py-3'
           }`}

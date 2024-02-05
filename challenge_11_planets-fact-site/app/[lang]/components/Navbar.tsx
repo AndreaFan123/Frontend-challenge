@@ -103,7 +103,7 @@ export default function Navbar({
   );
 
   return (
-    <nav className="flex justify-between w-full p-4 fixed md:z-20 md:w-full bg-darkBlue text-white md:flex md:flex-col md:items-center md:py-4 md:gap-3  xl:flex-row xl:w-full lg:justify-between lg:items-center uppercase tracking-wide border-b border-lightGrey/40 lg:py-[27px] lg:px-[32px]">
+    <nav className="flex justify-between w-full p-4 fixed z-50 md:z-20 md:w-full bg-darkBlue text-white md:flex md:flex-col md:items-center md:py-4 md:gap-3  xl:flex-row xl:w-full lg:justify-between lg:items-center uppercase tracking-wide border-b border-lightGrey/40 lg:py-[27px] lg:px-[32px]">
       <Link href="/" className="text-[1.5rem] lg:text-[2rem] xl:w-[30%]">
         The Planets
       </Link>

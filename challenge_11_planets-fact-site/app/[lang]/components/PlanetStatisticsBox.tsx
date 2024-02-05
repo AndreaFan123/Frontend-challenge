@@ -1,6 +1,3 @@
-// TODO: Using Years for mars, jupiter, saturn, uranus revolution time
-// TODO: Using hours for jupiter, saturn, uranus rotation time
-
 import { getDictionary } from '@/get-dictionary';
 
 interface PlanetStatisticsBoxProps {
