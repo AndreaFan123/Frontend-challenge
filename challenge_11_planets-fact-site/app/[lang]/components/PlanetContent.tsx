@@ -5,7 +5,7 @@ import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { PlanetStatisticsBox } from './PlanetStatisticsBox';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { ActionMobileButton } from './ActionMobileButton';
 import { ActionWebButton } from './ActionWebButton';
 
@@ -39,25 +39,66 @@ export const PlanetContent = ({
     setActiveIndex(index);
   };
 
-  const renderImage = useCallback((index: number) => {
-    switch (index) {
-      case 1:
-        return items.planetStructureImage;
-      case 2:
-        return items.planetGeologyImage;
+  const renderStructureAndGeoImage = (index: number) => {
+    if (index === 1) {
+      return (
+        <Image
+          src={items.planetStructureImage}
+          alt="Image"
+          width={0}
+          height={0}
+          loading="lazy"
+          className={`self-center ${
+            items.planetName === dictionary.planets.saturn
+              ? 'w-[62px] xl:w-[110px] xl:top-[57px] top-[33px] xl:right-[228px] right-[37px]'
+              : 'w-[75px] xl:w-[150px] xl:top-0 xl:right-[188px]  top-0 right-0'
+          }  h-auto absolute`}
+        />
+      );
     }
-  }, []);
 
-  const renderImageClass = useCallback((index: number, name?: string) => {
-    switch (index) {
-      case 2:
-        return `${
-          name === 'saturn' || '土星'
-            ? 'top-[33px] right-[38px]'
-            : 'top-[7rem] right-[10px]'
-        }`;
+    if (index === 2) {
+      return (
+        <Image
+          src={items.planetGeologyImage}
+          alt="Image"
+          width={0}
+          height={0}
+          loading="lazy"
+          className={`self-center ${
+            items.planetName === dictionary.planets.saturn
+              ? 'w-[62px] xl:w-[100px] xl:top-[230px] xl:right-[287px]  top-[125px] right-[67px]'
+              : 'w-[75px] xl:w-[120px] top-[100px] xl:top-[230px] xl:right-[277px] right-[37px]'
+          }  h-auto absolute`}
+        />
+      );
     }
-  }, []);
+  };
+
+  // const renderImage = useMemo(() => {
+  //   return (index: number) => {
+  //     switch (index) {
+  //       case 1:
+  //         return items.planetStructureImage;
+  //       case 2:
+  //         return items.planetGeologyImage;
+  //     }
+  //   };
+  // }, []);
+
+  // const renderImageClass = useMemo(
+  //   () => (index: number, name?: string) => {
+  //     switch (index) {
+  //       case 2:
+  //         return `${
+  //           name === 'saturn' || '土星'
+  //             ? 'top-[33px] right-[38px]'
+  //             : 'top-[7rem] right-[10px]'
+  //         }`;
+  //     }
+  //   },
+  //   [],
+  // );
 
   const usingHoursForRotation =
     items.planetName === dictionary.planets.jupiter ||
@@ -90,25 +131,11 @@ export const PlanetContent = ({
             loading="lazy"
             className={`self-center ${
               items.planetName === dictionary.planets.saturn
-                ? 'w-[200px]'
-                : 'w-[150px] '
-            } h-auto xl:w-[336px]`}
+                ? 'w-[200px] xl:w-[350px]'
+                : 'w-[150px] xl:w-[300px]'
+            } h-auto `}
           />
-          {activeIndex !== 0 && (
-            <Image
-              src={renderImage(activeIndex) || ''}
-              alt="Image"
-              width={0}
-              height={0}
-              loading="lazy"
-              className={`self-center ${
-                items.planetName === dictionary.planets.saturn
-                  ? 'w-[62px]'
-                  : 'w-[75px]'
-              }  h-auto absolute top-0 right-0 
-              ${renderImageClass(activeIndex, items.planetName)}`}
-            />
-          )}
+          {renderStructureAndGeoImage(activeIndex)}
         </figure>
 
         <article className="items-center text-center flex flex-col gap-4 md:flex-row xl:flex-col xl:w-[40%] md:w-full md:gap-7">
