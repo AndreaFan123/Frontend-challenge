@@ -1,21 +1,21 @@
 'use client';
 
 import { getDictionary } from '@/get-dictionary';
+import { on } from 'events';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export interface ActionButtonProps {
-  mobileTitle?: string;
-  webTitle?: string;
-  onClick: () => void;
+  dictionary: Awaited<ReturnType<typeof getDictionary>>;
+  activeIndex: number;
+  onActive: (index: number) => void;
 }
 
 export const ActionMobileButton = ({
   dictionary,
-}: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>;
-}) => {
-  const [defaultActive, setDefaultActive] = useState(0);
+  activeIndex,
+  onActive,
+}: ActionButtonProps) => {
   const indexPath = usePathname().split('/')[2] === undefined;
   const activePath = usePathname().split('/')[2];
 
@@ -42,39 +42,36 @@ export const ActionMobileButton = ({
     }
   };
 
-  const actionMobileButtons: ActionButtonProps[] = [
+  const actionMobileButtons = [
     {
       mobileTitle: dictionary.mobileActionButtons.overview,
-      onClick: () => {},
     },
     {
       mobileTitle: dictionary.mobileActionButtons.internalStructure,
-      onClick: () => {},
     },
     {
       mobileTitle: dictionary.mobileActionButtons.surfaceGeology,
-      onClick: () => {},
     },
   ];
 
   return (
     <>
       {indexPath ? null : (
-        <div className="w-full fixed pt-16 md:hidden">
+        <div className="w-full fixed z-20 pt-16 md:hidden">
           <div className="text-white pt-3 bg-darkBlue px-4 relative border-t border-b border-lightGrey/40 tracking-wide flex justify-between text-[1rem]">
             {actionMobileButtons.map((mobileButton, indx) => (
               <button
                 className={`cursor-pointer ${
-                  indx === defaultActive
+                  indx === activeIndex
                     ? renderButtonActiveLine(activePath)
                     : 'border-b-4 pb-3 border-transparent'
                 }`}
                 key={mobileButton.mobileTitle}
-                onClick={() => setDefaultActive(indx)}
+                onClick={() => onActive(indx)}
               >
                 <span
                   className={`${
-                    indx === defaultActive ? 'text-white' : 'text-lightGrey'
+                    indx === activeIndex ? 'text-white' : 'text-lightGrey'
                   }`}
                 >
                   {mobileButton.mobileTitle}
