@@ -4,7 +4,6 @@ import venusGeo from '@/public/assets/venus/venus-geo.png';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/get-dictionary';
 import { PlanetContent, PlanetContentProps } from '../components/PlanetContent';
-import { ActionButton } from '../components/ActionMobileButton';
 import { PlanetPageLayout } from '../layout/PlanetPageLayout';
 
 export default async function VenusPage({

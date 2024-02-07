@@ -75,31 +75,6 @@ export const PlanetContent = ({
     }
   };
 
-  // const renderImage = useMemo(() => {
-  //   return (index: number) => {
-  //     switch (index) {
-  //       case 1:
-  //         return items.planetStructureImage;
-  //       case 2:
-  //         return items.planetGeologyImage;
-  //     }
-  //   };
-  // }, []);
-
-  // const renderImageClass = useMemo(
-  //   () => (index: number, name?: string) => {
-  //     switch (index) {
-  //       case 2:
-  //         return `${
-  //           name === 'saturn' || '土星'
-  //             ? 'top-[33px] right-[38px]'
-  //             : 'top-[7rem] right-[10px]'
-  //         }`;
-  //     }
-  //   },
-  //   [],
-  // );
-
   const usingHoursForRotation =
     items.planetName === dictionary.planets.jupiter ||
     items.planetName === dictionary.planets.saturn ||
@@ -116,7 +91,7 @@ export const PlanetContent = ({
   return (
     <>
       <ActionMobileButton
-        dictionary={dictionary}
+        dictionary={dictionary['mobileActionButtons']}
         activeIndex={activeIndex}
         onActive={handleActiveIndex}
       />
@@ -155,7 +130,7 @@ export const PlanetContent = ({
             </div>
           </div>
           <ActionWebButton
-            dictionary={dictionary}
+            dictionary={dictionary['webActionButtons']}
             activeIndex={activeIndex}
             onActive={handleActiveIndex}
           />

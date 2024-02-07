@@ -6,7 +6,9 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export interface ActionButtonProps {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>;
+  dictionary: Awaited<ReturnType<typeof getDictionary>>[
+    | 'mobileActionButtons'
+    | 'webActionButtons'];
   activeIndex: number;
   onActive: (index: number) => void;
 }
@@ -44,13 +46,13 @@ export const ActionMobileButton = ({
 
   const actionMobileButtons = [
     {
-      mobileTitle: dictionary.mobileActionButtons.overview,
+      mobileTitle: dictionary.overview,
     },
     {
-      mobileTitle: dictionary.mobileActionButtons.internalStructure,
+      mobileTitle: dictionary.internalStructure,
     },
     {
-      mobileTitle: dictionary.mobileActionButtons.surfaceGeology,
+      mobileTitle: dictionary.surfaceGeology,
     },
   ];
 

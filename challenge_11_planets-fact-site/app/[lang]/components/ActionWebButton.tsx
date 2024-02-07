@@ -39,13 +39,13 @@ export const ActionWebButton = ({
 
   const actionWebButtons = [
     {
-      webTitle: dictionary.webActionButtons.overview,
+      webTitle: dictionary.overview,
     },
     {
-      webTitle: dictionary.webActionButtons.internalStructure,
+      webTitle: dictionary.internalStructure,
     },
     {
-      webTitle: dictionary.webActionButtons.surfaceGeology,
+      webTitle: dictionary.surfaceGeology,
     },
   ];
 
