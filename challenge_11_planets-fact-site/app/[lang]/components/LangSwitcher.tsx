@@ -1,7 +1,5 @@
 'use client';
 
-// TODO: Make it like selector
-
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
