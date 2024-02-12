@@ -24,6 +24,7 @@ export default async function marsPage({
     planetAlt: dictionary.planets.mars,
     planetSourceLink: 'https://en.wikipedia.org/wiki/Mars',
     planetSourceLinkText: 'Wikipedia',
+    rotationTime: '1.03',
     revolutionTime: '1.88',
     radius: '3,389.5',
     temperature: '-28',
