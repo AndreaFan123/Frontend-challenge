@@ -62,3 +62,9 @@ Table of contents:
 
 - [Live Demo](https://sunnyside-agency-10.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_sunnyside_agency)
+
+## Challenge 11: Planets Fact Site
+
+- Tech Stack: Next.js, Tailwind CSS, TypeScript
+- Additional Features: i18n
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/challenge_11_planets-fact-site)
