@@ -20,7 +20,7 @@ export const PlanetStatisticsBox = ({
   dictionary,
 }: PlanetStatisticsBoxProps) => {
   return (
-    <ul className="flex flex-col px-6 lg:px-8  xl:px-36 w-full gap-4 lg:flex-row ">
+    <ul className="flex flex-col px-6 pb-12 lg:pb-20 lg:px-8  xl:px-36 w-full gap-4 lg:flex-row ">
       <li className="border border-lightGrey/80 p-4 lg:p-6 xl:p-8  flex lg:flex-col justify-between items-center w-full">
         <span className="text-lightGrey uppercase font-bold font-spartan text-sm xl:text-base">
           {dictionary.statistics.rotationTime}

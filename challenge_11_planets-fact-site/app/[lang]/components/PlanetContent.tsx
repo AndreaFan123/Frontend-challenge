@@ -50,8 +50,8 @@ export const PlanetContent = ({
           loading="lazy"
           className={`self-center ${
             items.planetName === dictionary.planets.saturn
-              ? 'w-[62px] xl:w-[110px] xl:top-[57px] top-[33px] xl:right-[228px] right-[37px]'
-              : 'w-[75px] xl:w-[150px] xl:top-0 xl:right-[188px]  top-0 right-0'
+              ? 'w-[62px] xl:w-[110px] xl:top-[57px] top-[33px] xl:right-[238px] right-[37px]'
+              : 'w-[75px] xl:w-[150px] xl:top-0 xl:right-[197px]  top-0 right-0'
           }  h-auto absolute`}
         />
       );
@@ -67,8 +67,8 @@ export const PlanetContent = ({
           loading="lazy"
           className={`self-center ${
             items.planetName === dictionary.planets.saturn
-              ? 'w-[62px] xl:w-[100px] xl:top-[230px] xl:right-[287px]  top-[125px] right-[67px]'
-              : 'w-[75px] xl:w-[120px] top-[100px] xl:top-[230px] xl:right-[277px] right-[37px]'
+              ? 'w-[62px] xl:w-[100px] xl:top-[230px] xl:right-[297px]  top-[125px] right-[67px]'
+              : 'w-[75px] xl:w-[120px] top-[100px] xl:top-[230px] xl:right-[288px] right-[37px]'
           }  h-auto absolute`}
         />
       );
@@ -96,7 +96,7 @@ export const PlanetContent = ({
         onActive={handleActiveIndex}
       />
 
-      <div className="px-6 lg:px-8 xl:px-36 pt-48  pb-12 md:pt-60 xl:pt-48 flex flex-col gap-16 items-center xl:flex-row xl:justify-between">
+      <div className="px-6 lg:px-8 xl:px-36 pt-48  pb-12 lg:pb-28 md:pb-16 md:pt-60 xl:pt-48 flex flex-col gap-16 items-center xl:flex-row xl:justify-between">
         <figure className="xl:w-1/2 xl:flex xl:justify-center relative">
           <Image
             src={items.planetOverviewImage}
