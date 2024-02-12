@@ -123,7 +123,11 @@ export const PlanetContent = ({
               <span className="inline-block">
                 {dictionary.generalText.source}
               </span>
-              <Link href={items.planetSourceLink} className="pr-1 underline">
+              <Link
+                href={items.planetSourceLink}
+                className="pr-1 underline"
+                target="_blank"
+              >
                 {items.planetSourceLinkText}
               </Link>
               <FaExternalLinkSquareAlt />
