@@ -18,7 +18,7 @@ export default function LangSwitcher() {
   };
 
   return (
-    <ul className="w-1/2 flex p-4 text-[1rem] md:flex-row gap-3 lg:w-[15%]">
+    <ul className="w-1/2 flex p-4 text-[1rem] md:flex-row gap-3 lg:w-[13%]">
       {i18n.locales.map((locale) => {
         return (
           <li key={locale} className="border py-1 text-center px-2 rounded-md">
