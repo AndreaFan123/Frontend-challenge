@@ -27,6 +27,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  writing-mode: horizontal-tb;
 }
 
 @layer components {
