@@ -68,3 +68,4 @@ Table of contents:
 - Tech Stack: Next.js, Tailwind CSS, TypeScript
 - Additional Features: i18n
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/challenge_11_planets-fact-site)
+- [Live Demo](https://frontend-challenge-qpeo3hcjl-andreafan123.vercel.app/en)
