@@ -8,18 +8,19 @@ interface ThumbnailProps {
 
 export const Thumbnail = ({ item }: ThumbnailProps) => {
   return (
-    <Link href={item.url}>
+    <Link href={item.url} className="relative">
       <figure>
         <Image
-          src={item.images.thumbnail}
+          src={item.images.gallery}
           width={0}
           height={0}
           loading="lazy"
           alt={item.description}
+          className="self-center w-full h-auto object-contain brightness-75"
         />
-        <figcaption>
-          <h3>{item.artist.name}</h3>
-          <p>{item.name}</p>
+        <figcaption className="w-full text-wrap absolute text-white bottom-8 left-5 flex flex-col gap-2">
+          <h3 className="thumbnailArtistWork"> {item.name}</h3>
+          <p className="thumbnailArtistName">{item.artist.name}</p>
         </figcaption>
       </figure>
     </Link>
