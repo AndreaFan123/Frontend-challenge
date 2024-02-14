@@ -3,6 +3,7 @@ import { Libre_Baskerville } from 'next/font/google';
 
 import './globals.css';
 import { Heading } from './components/Heading';
+import { MainContainer } from './layouts/MainContainer';
 
 const libre = Libre_Baskerville({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html>
       <body className={libre.className}>
         <Heading />
-        {children}
+        <MainContainer>{children}</MainContainer>
       </body>
     </html>
   );

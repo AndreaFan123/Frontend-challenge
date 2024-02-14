@@ -12,31 +12,31 @@ body {
 
 @layer components {
   .heading1 {
-    @apply text-[5.6rem] text-primaryBlack font-bold leading-[64px];
+    @apply lg:text-[5.6rem] text-primaryBlack font-bold leading-[64px];
   }
 
   .heading2 {
-    @apply text-[2.4rem] text-primaryBlack font-bold leading-[29px];
+    @apply lg:text-[2.4rem] text-primaryBlack font-bold leading-[29px];
   }
 
   .heading3 {
-    @apply text-[1.8rem] text-primaryBlack font-bold leading-[22px];
+    @apply lg:text-[1.8rem] text-primaryBlack font-bold leading-[22px];
   }
 
   .subHeading1 {
-    @apply text-[1.5rem] text-primaryBlack font-medium leading-[19px];
+    @apply lg:text-[1.5rem] text-primaryBlack font-medium leading-[19px];
   }
 
   .subHeading2 {
-    @apply text-[1.3rem] text-primaryBlack font-medium leading-[17px];
+    @apply lg:text-[1.3rem] text-primaryBlack font-medium leading-[17px];
   }
 
   .startSlideshow {
-    @apply uppercase text-primaryGrey font-bold text-[1.2rem] leading-[15px] tracking-[2.5px] transition-all duration-300 ease-in-out hover:text-primaryBlack;
+    @apply uppercase text-primaryGrey font-bold lg:text-[1.2rem] leading-[15px] tracking-[2.5px] transition-all duration-300 ease-in-out hover:text-primaryBlack;
   }
 
   .goToSource {
-    @apply uppercase text-primaryGrey  font-bold text-[0.9rem] leading-[12px] tracking-[2px] transition-all duration-300 ease-in-out hover:text-primaryBlack;
+    @apply uppercase text-primaryGrey  font-bold lg:text-[0.9rem] leading-[12px] tracking-[2px] transition-all duration-300 ease-in-out hover:text-primaryBlack;
   }
 
   .description {
