@@ -1,10 +1,23 @@
-export const ArtworkArtistImage = () => {
+import Image, { StaticImageData } from 'next/image';
+
+interface ArtworkArtistImageProps {
+  imgSrc?: StaticImageData;
+  alt?: string;
+}
+
+export const ArtworkArtistImage = ({
+  imgSrc,
+  alt,
+}: ArtworkArtistImageProps) => {
   return (
-    <img
-      src="/images/artists/vincent-van-gogh.jpg"
-      alt="Vincent van Gogh"
-      width="100"
-      height="100"
-    />
+    <figure>
+      <Image
+        src={imgSrc ? imgSrc : ''}
+        alt={alt ? alt : ''}
+        width="100"
+        height="100"
+        loading="lazy"
+      />
+    </figure>
   );
 };

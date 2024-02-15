@@ -1,11 +1,24 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { SingleGalleryInfo } from '@/app/components/single-gallery-info/SingleGalleryInfo';
+import { galleries } from '@/app/constants/galleries';
+
 export default function ArnolfiniPortraitPage() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
+  const artwork = galleries.find(
+    (gallery) => gallery.name === 'Arnolfini Portrait',
+  );
   return (
-    <main className="pt-[5rem] px-4">
-      <h1>Arnolfini Portrait</h1>
-      <p>
-        Arnolfini Portrait is a painting by Jan van Eyck, dated 1434. It is a
-        National Gallery, London.
-      </p>
-    </main>
+    <section>
+      <SingleGalleryInfo artwork={artwork} />
+    </section>
   );
 }

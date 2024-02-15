@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { GalleriesType } from '../constants/galleries';
 import Link from 'next/link';
+import { GalleriesType } from '../constants/galleries';
 
 interface ThumbnailProps {
   item: GalleriesType;
