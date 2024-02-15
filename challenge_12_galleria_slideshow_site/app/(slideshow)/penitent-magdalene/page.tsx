@@ -1,7 +1,24 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { SingleGalleryInfo } from '@/app/components/single-gallery-info/SingleGalleryInfo';
+import { galleries } from '@/app/constants/galleries';
+
 export default function PenitentMagdalenePage() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
+  const artwork = galleries.find(
+    (gallery) => gallery.name === 'Penitent Magdalene',
+  );
   return (
-    <main>
-      <h1>Penitent Magdalene</h1>
-    </main>
+    <section>
+      <SingleGalleryInfo artwork={artwork} />
+    </section>
   );
 }

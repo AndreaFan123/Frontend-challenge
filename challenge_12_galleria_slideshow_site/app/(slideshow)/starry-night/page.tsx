@@ -1,17 +1,22 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { SingleGalleryInfo } from '@/app/components/single-gallery-info/SingleGalleryInfo';
 import { galleries } from '@/app/constants/galleries';
 
 export default function StarryNightPage() {
-  const artwork = galleries.find((gallery) => gallery.name === 'starry-night');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
+  const artwork = galleries.find((gallery) => gallery.name === 'Starry Night');
   return (
-    <main>
-      <ArtworkImageContainer src={artwork?.images.hero.small} />
-      <ArtworkTitles title={artwork?.name} artist={artwork?.artist.name} />
-      <ArtworkArtistImage src={artwork?.artist.image} />
-      <ArtworkDescription
-        year={artwork?.year}
-        description={artwork?.description}
-        source={artwork?.source}
-      />
-    </main>
+    <section>
+      <SingleGalleryInfo artwork={artwork} />
+    </section>
   );
 }

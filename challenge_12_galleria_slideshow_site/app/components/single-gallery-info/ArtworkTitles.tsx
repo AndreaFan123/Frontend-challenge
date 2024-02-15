@@ -1,10 +1,13 @@
-export const ArtworkImageContainer = () => {
+interface ArtworkTitlesProps {
+  title?: string;
+  artist?: string;
+}
+
+export const ArtworkTitles = ({ title, artist }: ArtworkTitlesProps) => {
   return (
-    <img
-      src="/images/artworks/starry-night.jpg"
-      alt="Starry Night"
-      width="100"
-      height="100"
-    />
+    <div>
+      <h1>{title}</h1>
+      <h2>{artist}</h2>
+    </div>
   );
 };
