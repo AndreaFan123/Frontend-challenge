@@ -5,7 +5,7 @@ import logo from '@/public/assets/logo/galleria..png';
 export const Footer = () => {
   return (
     <footer className="border-t border-b-lightGrey w-full my-4">
-      <div className="flex flex-col justify-center items-center p-2">
+      <div className="flex flex-col justify-center items-center pt-4">
         <Link href="/">
           <Image
             src={logo}
