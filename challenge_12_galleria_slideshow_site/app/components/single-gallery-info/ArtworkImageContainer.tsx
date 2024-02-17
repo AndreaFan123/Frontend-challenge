@@ -10,7 +10,7 @@ export const ArtworkImageContainer = ({
   alt,
 }: ArtworkImageContainerProps) => {
   return (
-    <figure className=" w-[475px] h-[560px]">
+    <figure className="w-auto h-[280px] lg:w-[475px] lg;h-[560px] relative">
       <Image
         src={imgSrc ? imgSrc : ''}
         alt={alt ? alt : ''}
