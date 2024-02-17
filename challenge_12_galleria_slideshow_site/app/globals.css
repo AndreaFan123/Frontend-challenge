@@ -43,14 +43,14 @@ body {
   }
 
   .description {
-    @apply font-bold text-[1.4rem] text-primaryGrey leading-[28px];
+    @apply font-bold text-sm text-primaryGrey leading-8 lg:leading-5;
   }
 
   .thumbnailArtistWork {
-    @apply font-bold text-2xl text-white leading-[28px];
+    @apply font-bold text-sm lg:text-2xl text-white leading-[14px] lg:leading-[28px];
   }
 
   .thumbnailArtistName {
-    @apply text-sm text-white/60;
+    @apply text-xs text-white/60;
   }
 }
