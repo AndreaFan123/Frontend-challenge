@@ -9,7 +9,7 @@ export const Heading = () => {
   // Activate slideshow, and slide to next every 5 secs
   const [slideshowActive, setSlideshowActive] = useState(false);
   return (
-    <header className="fixed z-20  w-full max-w-[1440px] mx-auto border-b border-b-lightGrey bg-white">
+    <header className="fixed z-20  w-full max-w-[1200px] mx-auto border-b border-b-lightGrey bg-white">
       <div className="flex justify-between items-center p-2">
         <Link href="/">
           <Image
