@@ -7,10 +7,10 @@ interface ImageModalProps {
 
 export const ImageModal = ({ onClose, imgItem }: ImageModalProps) => {
   return (
-    <div className="absolute px-4 md:px-[4.9rem] xl:px-[16.5rem] items-center bg-black/85 pt-36 flex flex-col gap-5 z-20 w-full h-full">
+    <div className="absolute px-[6rem] md:px-[15rem] xl:px-[31.5rem] items-center bg-black/90 pt-36 flex flex-col gap-5 z-20 w-full h-full">
       <button
         onClick={onClose}
-        className="text-white uppercase font-bold text-sm self-end"
+        className="text-white uppercase font-bold text-sm tracking-wider xl:text-lg self-end"
       >
         Close
       </button>

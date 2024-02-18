@@ -18,7 +18,7 @@ export const ArtworkDescription = ({
         {year}
       </span>
       <div className="lg:w-full lg:flex lg:flex-col lg:items-start lg:pl-48 lg:mt-[-8rem]">
-        <p className="description mt-[-50px] md:w-[457px] md:mt-[-115px] md:ml-[125px] lg:ml-0 lg:mt-0 lg:w-[350px] lg:leading-7">
+        <p className="description mt-[-50px] md:w-[457px] md:mt-[-115px] md:ml-[125px] lg:ml-0 lg:mt-4 lg:w-[350px] lg:leading-7">
           {description}
         </p>
         <Link
