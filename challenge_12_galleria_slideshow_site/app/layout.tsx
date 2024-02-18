@@ -1,3 +1,5 @@
+'use client';
+
 import { Libre_Baskerville } from 'next/font/google';
 import './globals.css';
 import { useState } from 'react';
