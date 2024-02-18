@@ -7,7 +7,7 @@ export default function HomePage() {
   const grid_3 = galleries.slice(8, 12);
   const grid_4 = galleries.slice(12, 16);
   return (
-    <section className="grid grid-cols-2 gap-4 px-4">
+    <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 px-4">
       <div className="grid gap-4">
         {grid_1.map((gallery) => (
           <Thumbnail item={gallery} />
