@@ -12,6 +12,8 @@ Table of contents:
 - [Challenge 8](#challenge-8--nft-preview-card)
 - [Challenge 9](#challenge-9-qr-code)
 - [Challenge 10](#challenge-10-sunnyside-agency)
+- [Challenge 11](#challenge-11-planet-fact-site)
+- [Challenge 12](#challenge-12-galleria-slideshow)
 
 ## Challenge 1 : Order summary
 
@@ -62,3 +64,11 @@ Table of contents:
 
 - [Live Demo](https://sunnyside-agency-10.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_sunnyside_agency)
+
+## Cahllenge 11: Planet Fact Site
+- [Live Demo](https://planets-fact-site-neon.vercel.app/en)
+- [GitHub](https://github.com/AndreaFan123/planets-fact-site)
+
+## Challenge 12: Galleria Slideshow
+- [Live Demo](https://galleria-slideshow-site-rho.vercel.app/)
+- [GitHub](https://github.com/AndreaFan123/galleria_slideshow_site)
