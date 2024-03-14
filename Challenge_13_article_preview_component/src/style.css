@@ -1,0 +1,36 @@
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Desaturated-grayish-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --font-weight-700:700;
+  --font-weight-500:500
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size:62.5%;
+  font-family: "Manrope" , sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
