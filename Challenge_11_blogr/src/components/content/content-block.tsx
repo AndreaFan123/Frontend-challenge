@@ -16,7 +16,11 @@ export const ContentBlock = ({
           {contents.header}
         </h2>
         <figure>
-          <img src={mobileEditor} alt="editor" className="block self-center" />
+          <img
+            src={contents.imgSrc}
+            alt="editor"
+            className="block self-center"
+          />
         </figure>
       </div>
       <div className="flex flex-col gap-14 px-9">
