@@ -12,7 +12,7 @@ html,  *::before, *::after{
 
 @layer base {
   body {
-    @apply font-font-overpass text-base leading-5 bg-white w-full lg:max-w-[1000px] lg:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px];
+    @apply font-font-overpass text-base leading-5 bg-white w-full lg:mx-auto;
   }
 }
 

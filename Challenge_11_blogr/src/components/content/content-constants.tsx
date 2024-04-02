@@ -1,3 +1,7 @@
+import mobileEditor from "../../assets/images/illustration-editor-mobile.svg";
+import laptop from "../../assets/images/illustration-laptop-mobile.svg";
+import phones from "../../assets/images/illustration-phones.svg";
+
 interface DescriptionType {
   id?: number;
   title: string;
@@ -6,11 +10,19 @@ interface DescriptionType {
 
 interface ContentsType {
   header: string | null;
-  content: DescriptionType[];
+  imgSrc: React.ReactNode | null;
+  content: DescriptionType[] | null;
 }
+
+export type SingleContentType = {
+  header: string | null;
+  imgSrc: React.ReactNode | null;
+  content: string | null;
+};
 
 const SectionContent_A: ContentsType = {
   header: "Designed for the future",
+  imgSrc: <img src={mobileEditor} alt="editor" />,
   content: [
     {
       id: 1,
@@ -27,7 +39,9 @@ const SectionContent_A: ContentsType = {
   ],
 };
 
-const SectionContent_B = {
+const SectionContent_B: ContentsType = {
+  header: null,
+  imgSrc: laptop,
   content: [
     {
       id: 1,
@@ -44,9 +58,10 @@ const SectionContent_B = {
   ],
 };
 
-const SectionContent_C = {
+const SectionContent_C: SingleContentType = {
   header: "State of the Art Infrastructure",
-  description:
+  imgSrc: phones,
+  content:
     "With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where you readers are, keeping your site competitive.",
 };
 

@@ -19,7 +19,7 @@ export const Navbar = () => {
         <h1 className="text-white text-4xl pb-4">
           A modern publishing platform
         </h1>
-        <p className="text-white font-overpass-light text-lg pb-10">
+        <p className="text-white font-overpass-light text-xl pb-10">
           Grow your audience and build your outline brand
         </p>
         <div className="flex justify-between gap-4">

@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <main>
         <ContentBlock contents={SectionContent_A} />
+        <ContentBlock contents={SectionContent_C} />
       </main>
     </>
   );
