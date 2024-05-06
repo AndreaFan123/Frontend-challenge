@@ -8,21 +8,24 @@ interface DescriptionType {
   description: string;
 }
 
-interface ContentsType {
+export interface ContentsType {
+  contentType: "single" | "multiple";
   header: string | null;
-  imgSrc: React.ReactNode | null;
+  imgSrc: string | null;
   content: DescriptionType[] | null;
 }
 
-export type SingleContentType = {
+export interface SingleContentType {
+  contentType: "single" | "multiple";
   header: string | null;
-  imgSrc: React.ReactNode | null;
+  imgSrc: string | null;
   content: string | null;
-};
+}
 
 const SectionContent_A: ContentsType = {
+  contentType: "multiple",
   header: "Designed for the future",
-  imgSrc: <img src={mobileEditor} alt="editor" />,
+  imgSrc: mobileEditor,
   content: [
     {
       id: 1,
@@ -39,13 +42,22 @@ const SectionContent_A: ContentsType = {
   ],
 };
 
-const SectionContent_B: ContentsType = {
+const SectionContent_B: SingleContentType = {
+  contentType: "single",
+  header: "State of the Art Infrastructure",
+  imgSrc: phones,
+  content:
+    "With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where you readers are, keeping your site competitive.",
+};
+
+const SectionContent_C: ContentsType = {
+  contentType: "multiple",
   header: null,
   imgSrc: laptop,
   content: [
     {
       id: 1,
-      title: "Introducing an extensible editor",
+      title: "Free, open, simple",
       description:
         "Blogr is a free and open source application backed by a large community if helpful developer. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.",
     },
@@ -58,13 +70,4 @@ const SectionContent_B: ContentsType = {
   ],
 };
 
-const SectionContent_C: SingleContentType = {
-  header: "State of the Art Infrastructure",
-  imgSrc: phones,
-  content:
-    "With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where you readers are, keeping your site competitive.",
-};
-
 export { SectionContent_A, SectionContent_B, SectionContent_C };
-
-export type { DescriptionType, ContentsType };
