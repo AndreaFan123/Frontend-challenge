@@ -14,7 +14,7 @@ const button = cva(
         secondary: ["border", "bg-transparent", "text-white", "border-white"],
       },
       size: {
-        medium: ["text-md", "py-3", "px-5"],
+        medium: ["text-md", "py-3", "px-4", "sm:py-4", "sm:px-6"],
       },
     },
     defaultVariants: {

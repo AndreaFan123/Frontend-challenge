@@ -8,10 +8,10 @@ export default function ContentFreeOpenBlock({
   contents,
 }: ContentFreeOpenBlockProps) {
   return (
-    <section className="text-center flex flex-col">
+    <section className="text-center flex flex-col w-full">
       <div>
         <h2>{contents.header}</h2>
-        <figure className="mb-[45px]">
+        <figure className="mb-[45px] w-full flex justify-center">
           <img src={contents.imgSrc ?? ""} alt="editor" />
         </figure>
         <article>

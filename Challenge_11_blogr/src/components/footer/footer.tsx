@@ -1,4 +1,5 @@
 import footerBG from "../../assets/images/footer-bg.svg";
+import footerBG768 from "../../assets/images/footer-768.svg";
 import Logo from "../../assets/images/logo.svg";
 
 const footerLinks = [
@@ -113,8 +114,11 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <figure className="absolute -z-30 top-0 left-0 h-[900px] w-full">
-        <img src={footerBG} alt="footer bg" />
+      <figure className="absolute -z-30 top-0 left-0 w-screen sm:hidden">
+        <img src={footerBG} alt="footer bg" className="block w-full h-full" />
+      </figure>
+      <figure className="absolute -z-30 top-0 left-0 hidden sm:w-screen sm:block">
+        <img src={footerBG768} alt="footer bg" className="w-full h-full" />
       </figure>
     </footer>
   );

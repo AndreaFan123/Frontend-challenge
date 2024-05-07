@@ -13,7 +13,7 @@ export const ContentDesignForFutureBlock = ({
         <h2 className="text-2xl text-color-heading font-medium mb-[45px]">
           {contents.header}
         </h2>
-        <figure>
+        <figure className="flex justify-center mb-[45px]">
           <img src={contents.imgSrc ?? ""} alt="editor" />
         </figure>
         <article>

@@ -15,7 +15,7 @@ export const Navbar = () => {
           <img src={MenuIcon} alt="Click to open navbar" />
         </button>
       </nav>
-      <section className="text-center">
+      <section className="text-center sm:px-12 md:px-24">
         <h1 className="text-white text-4xl pb-4">
           A modern publishing platform
         </h1>
