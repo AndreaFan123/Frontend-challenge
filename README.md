@@ -1,4 +1,5 @@
 # Frontend Challenge
+
 Here are the challenges that I participate in from a website called [Frontend Mentor](https://www.frontendmentor.io).
 
 Table of contents:
@@ -66,10 +67,17 @@ Table of contents:
 - [Live Demo](https://sunnyside-agency-10.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_sunnyside_agency)
 
-## Cahllenge 11: Planet Fact Site
+## Challenge 11: Planet Fact Site
+
 - [Live Demo](https://planets-fact-site-neon.vercel.app/en)
 - [GitHub](https://github.com/AndreaFan123/planets-fact-site)
 
 ## Challenge 12: Galleria Slideshow
+
 - [Live Demo](https://galleria-slideshow-site-rho.vercel.app/)
 - [GitHub](https://github.com/AndreaFan123/galleria_slideshow_site)
+
+## Challenge 13: Article Preview Component
+
+- [Live Demo](https://article-card-component-328938.netlify.app/)
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_11_article_preview_component)
