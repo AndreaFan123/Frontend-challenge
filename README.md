@@ -68,12 +68,21 @@ Table of contents:
 - [Live Demo](https://sunnyside-agency-10.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_10_sunnyside_agency)
 
+
 ## Planet Fact Site
+
 
 - [Live Demo](https://planets-fact-site-neon.vercel.app/en)
 - [GitHub](https://github.com/AndreaFan123/planets-fact-site)
 
+
 ## Galleria Slideshow
+
 
 - [Live Demo](https://galleria-slideshow-site-rho.vercel.app/)
 - [GitHub](https://github.com/AndreaFan123/galleria_slideshow_site)
+
+## Challenge 13: Article Preview Component
+
+- [Live Demo](https://article-card-component-328938.netlify.app/)
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_11_article_preview_component)
