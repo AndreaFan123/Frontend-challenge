@@ -1,0 +1,53 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  --fw-normal: 400;
+  --fw-bold:700;
+  --fw-bolder: 800;
+
+  --primary-soft-orange: hsl(35, 77%, 62%)
+  --primary-soft-red: hsl(5, 85%, 63%)
+  --off-white: hsl(36, 100%, 99%)
+  --grayish-blue: hsl(233, 8%, 79%)
+  --dark-grayish-blue: hsl(236, 13%, 42%)
+  --very-dark-blue: hsl(240, 100%, 5%)
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 15px;
+  background-color: hsl(32, 88%, 97%);
+  width: 100%;
+  max-width:1200px;
+  min-height:100vh;
+  margin:0 auto;
+  position: relative;
+
+  @media screen and (max-width: 1024px){
+    max-width: 700px;
+    padding: 24px
+  }
+
+
+
+  @media screen and (max-width: 768px){
+    max-width: 500px;
+    padding: 24px
+  }
+}
