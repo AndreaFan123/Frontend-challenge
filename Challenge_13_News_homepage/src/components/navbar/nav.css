@@ -121,6 +121,7 @@
     .mobile_nav_links-container {
       width: 50%;
       right: -24%;
+      top: -1%;
     }
   }
 }
@@ -130,6 +131,7 @@
     .mobile_nav_links-container {
       width: 60%;
       right: 0;
+      top: -1%;
     }
   }
 }
