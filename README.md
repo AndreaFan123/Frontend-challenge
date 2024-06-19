@@ -90,8 +90,14 @@ Table of contents:
 - [GitHub](https://github.com/AndreaFan123/galleria_slideshow_site)
 - Tech Stack: `Next.js`, `TypeScript`, `Tailwind CSS`
 
-## Challenge 13: Article Preview Component
+## Article Preview Component
 
 - [Live Demo](https://article-card-component-328938.netlify.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_11_article_preview_component)
 - Tech Stack: `HTML`, `CSS`
+
+## W. News Site
+
+- [Live Demo](https://frontend-challenge-eta-five.vercel.app/)
+- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_13_News_homepage)
+- Tech Stack: `React`, `TypeScript`, `CSS`
