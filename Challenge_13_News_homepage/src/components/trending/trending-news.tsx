@@ -3,6 +3,8 @@ import image_laptop from "../../../public/assets/image-top-laptops.jpg";
 import image_gaming from "../../../public/assets/image-gaming-growth.jpg";
 import TrendingNewsItem from "./trending-news-item";
 
+import "./trending.css";
+
 const trendingNews = [
   {
     id: "01",
@@ -28,7 +30,7 @@ export default function TrendingNews() {
   return (
     <>
       {trendingNews.map((news) => (
-        <div key={news.id}>
+        <div key={news.id} className="trending_content-container">
           <TrendingNewsItem
             id={news.id}
             title={news.title}

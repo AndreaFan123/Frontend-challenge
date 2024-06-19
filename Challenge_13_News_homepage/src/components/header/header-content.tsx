@@ -12,7 +12,7 @@ export default function HeaderContent({
   return (
     <div className="headline_content-container">
       <h1>{title}</h1>
-      <div>
+      <div className="headline_content-description">
         <p>{description}</p>
         <button>{cta}</button>
       </div>

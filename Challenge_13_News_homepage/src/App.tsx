@@ -6,13 +6,14 @@ function App() {
     <>
       <Navbar />
       <main className="main_wrapper">
-        {/* Desktop flex row; mobile flex column */}
-        <Headline />
-        <SidebarNews />
+        <section className="headline_sidebar-container">
+          <Headline />
+          <SidebarNews />
+        </section>
+        <section className="trending_news-container">
+          <TrendingNews />
+        </section>
       </main>
-      {/* <section>
-        <TrendingNews />
-      </section> */}
     </>
   );
 }

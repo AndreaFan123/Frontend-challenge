@@ -1,35 +1,93 @@
+.headline_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+
+  .headline_img-container {
+    .headline_img-desktop {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .headline_img-mobile {
+      display: none;
+    }
+  }
+
+  .headline_content-container {
+    display: flex;
+    width: 100%;
+    h1 {
+      display: inline-block;
+      width: 50%;
+      font-size: 3.5rem;
+      line-height: 1;
+      font-weight: 800;
+      margin: 16px 0;
+    }
+
+    .headline_content-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 16px 0;
+      width: 50%;
+      p {
+        display: inline-block;
+        font-weight: 400;
+        color: #666;
+        margin: 16px 0;
+      }
+
+      button {
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 40%;
+        height: 45px;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .headline_wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .headline_img-container {
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  }
-
-  .headline_content-container {
-    h1 {
-      font-weight: 800;
-      margin-bottom: 0;
-    }
-    p {
-      font-weight: 400;
-      color: #666;
+    .headline_img-container {
+      .headline_img-desktop {
+        display: none;
+      }
+      .headline_img-mobile {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
 
-    button {
-      background-color: hsl(5, 85%, 63%);
-      border: none;
-      text-transform: uppercase;
-      width: 50%;
-      height: 45px;
-      font-weight: 800;
+    .headline_content-container {
+      flex-direction: column;
+
+      h1 {
+        width: 100%;
+      }
+
+      .headline_content-description {
+        width: 100%;
+        p {
+          width: 100%;
+        }
+
+        button {
+          width: 50%;
+        }
+      }
     }
   }
 }

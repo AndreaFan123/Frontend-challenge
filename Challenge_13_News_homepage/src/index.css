@@ -34,20 +34,27 @@ body {
   font-size: 15px;
   background-color: hsl(32, 88%, 97%);
   width: 100%;
-  max-width:1200px;
+  max-width:1100px;
   min-height:100vh;
-  margin:0 auto;
+  margin:16px auto;
   position: relative;
 
   @media screen and (max-width: 1024px){
     max-width: 700px;
     padding: 24px
   }
-
-
-
   @media screen and (max-width: 768px){
     max-width: 500px;
     padding: 24px
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: var(--fw-bold);
+}
+
+p {
+  margin: 0;
+  font-weight: var(--fw-normal);
 }

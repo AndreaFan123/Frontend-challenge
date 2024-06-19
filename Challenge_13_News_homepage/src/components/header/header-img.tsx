@@ -8,7 +8,8 @@ type HeaderImgProps = {
 export default function HeaderImg({ desktopImg, mobileImg }: HeaderImgProps) {
   return (
     <div className="headline_img-container">
-      <img src={mobileImg} alt="web3" />
+      <img className="headline_img-desktop" src={desktopImg} alt="web3" />
+      <img className="headline_img-mobile" src={mobileImg} alt="web3" />
     </div>
   );
 }
