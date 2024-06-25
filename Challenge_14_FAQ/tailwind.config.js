@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'font-kumbh': "Kumbh Sans"
+        'font-kumbh': "Kumbh Sans",
       },
       colors: {
-        'dark-blue': 'hsl(238, 29%, 16%)',
+        "dark-blue": 'hsl(238, 29%, 16%)',
         'soft-red': 'hsl(14, 88%, 65%)',
         'gradient-violet': 'hsl(273, 75%, 66%)',
         'gradient-blue': 'hsl(240, 73%, 65%)',
