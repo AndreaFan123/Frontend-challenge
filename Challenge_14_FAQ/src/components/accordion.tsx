@@ -9,7 +9,7 @@ function Accordion() {
   console.log('Active index', activeIndex);
 
   return (
-    <div className="w-full flex flex-col gap-6">
+    <div className="w-full flex flex-col gap-4">
       <h1 className="text-center text-3xl font-bold ">FAQ</h1>
       {faqs.map((faq, index) => (
         <Panel

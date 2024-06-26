@@ -7,9 +7,20 @@ import patternMobile from '../images/bg-pattern-mobile.svg';
 
 function App() {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-between mx-auto h-auto bg-white relative rounded-md shadow-lg">
-      <div className="absolute top-[-145px] left-[25px] w-[250px] h-auto">
-        <img src={womanDesktop} alt="pattern" className="w-full h-full block self-center" />
+    <div className="w-[95%] lg:w-full flex h-auto flex-col justify-between mx-auto bg-white relative rounded-3xl shadow-lg">
+      <div className="absolute top-[-115px] left-1/2 -translate-x-1/2 w-[250px] h-auto">
+        <picture>
+          <source srcSet={womanDesktop} media="(min-width: 1024px)" />
+          <img
+            src={womanMobile}
+            alt="woman stands in front of a screen"
+            className="w-full h-full block self-center z-20"
+          />
+        </picture>
+        <picture>
+          <source srcSet={patternDesktop} media="(min-width: 1024px)" />
+          <img src={patternMobile} alt="pattern" className="absolute top-[115px]" />
+        </picture>
       </div>
       <FaqListing />
     </div>
