@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply text-xs mt-11 h-screen w-full max-w-full px-6 flex flex-col items-center justify-center  bg-gradient-to-b from-gradient-violet to-gradient-blue;
-  }
-}
