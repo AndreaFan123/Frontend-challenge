@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pale-orange font-kumbh w-full max-w-[375px] md:max-w-[700px] mx-auto lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1440px] relative;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply text-3xl font-bold text-dark-blue;
+  }
+}
