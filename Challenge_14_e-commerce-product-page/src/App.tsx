@@ -1,12 +1,11 @@
 import Navbar from "./components/navbar/navbar";
-import ProductImagesMobileSlider from "./components/product/product-images/product-images-mobile-slider";
+import ProductContainer from "./components/product/product-container";
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <ProductImagesMobileSlider />
+      <ProductContainer />
     </>
   );
 }
