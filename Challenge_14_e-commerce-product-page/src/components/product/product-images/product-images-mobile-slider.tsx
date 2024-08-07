@@ -1,10 +1,10 @@
-import product_1 from "../../../../public/images/image-product-1.jpg";
-import product_2 from "../../../../public/images/image-product-2.jpg";
-import product_3 from "../../../../public/images/image-product-3.jpg";
-import product_4 from "../../../../public/images/image-product-4.jpg";
+import product_1 from "../../../assets/images/image-product-1.jpg";
+import product_2 from "../../../assets/images/image-product-2.jpg";
+import product_3 from "../../../assets/images/image-product-3.jpg";
+import product_4 from "../../../assets/images/image-product-4.jpg";
 
-import previousChevron from "../../../../public/images/icon-next.svg";
-import nextChevron from "../../../../public/images/icon-previous.svg";
+import previousChevron from "../../../assets/images/icon-next.svg";
+import nextChevron from "../../../assets/images/icon-previous.svg";
 
 const images = [
   {

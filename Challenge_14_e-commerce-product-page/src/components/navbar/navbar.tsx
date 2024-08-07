@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
-import closeIcon from "../../../public/images/icon-close.svg";
-import menuIcon from "../../../public/images/icon-menu.svg";
-import cart from "../../../public/images/icon-cart.svg";
-import avatar from "../../../public/images/image-avatar.png";
-import logo from "../../../public/images/logo.svg";
+import closeIcon from "../../assets/images/icon-cart.svg";
+import menuIcon from "../../assets/images/icon-menu.svg";
+import cart from "../../assets/images/icon-cart.svg";
+import avatar from "../../assets/images/image-avatar.png";
+import logo from "../../assets/images/logo.svg";
 
 const links = [
   {
