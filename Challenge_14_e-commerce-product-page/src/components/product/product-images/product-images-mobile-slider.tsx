@@ -5,6 +5,7 @@ import product_4 from "../../../assets/images/image-product-4.jpg";
 
 import previousChevron from "../../../assets/images/icon-next.svg";
 import nextChevron from "../../../assets/images/icon-previous.svg";
+import { useState } from "react";
 
 const images = [
   {
@@ -30,39 +31,55 @@ const images = [
 ];
 
 export default function ProductImagesMobileSlider() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const goToPreviousImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex - 1
+    );
+
+    if (currentIndex === 0) {
+      setCurrentIndex(images.length - 1);
+    }
+  };
+  const goToNextImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+
+    if (currentIndex === images.length - 1) {
+      setCurrentIndex(0);
+    }
+  };
   return (
-    <div className="relative w-full h-full max-w-full ">
-      {images.map((img) => (
-        <figure className="w-full h-auto " key={img.id}>
-          <img
-            src={img.src}
-            alt={img.alt}
-            className="absolute inset-0 w-full h-80 object-cover"
-          />
-        </figure>
-      ))}
-      <div className="absolute w-full flex justify-center items-center h-full">
-        <button
-          // onClick={goToPrevious}
-          className="absolute flex justify-center  items-center left-2 top-1/2  w-[35px] h-[35px] bg-white rounded-full p-2 shadow-md"
-        >
-          <img
-            src={nextChevron}
-            alt="Click to next image"
-            className="block self-center"
-          />
-        </button>
-        <button
-          // onClick={goToNext}
-          className="absolute right-2 top-1/2 flex justify-center w-[35px] h-[35px]  items-center   bg-white rounded-full p-2 shadow-md"
-        >
-          <img
-            src={previousChevron}
-            alt="Click to previous image"
-            className="block self-center"
-          />
-        </button>
-      </div>
+    <div className="relative w-full h-80">
+      <figure className="w-full h-auto">
+        <img
+          src={images[currentIndex].src}
+          alt={images[currentIndex].alt}
+          className="w-full h-full object-cover"
+        />
+      </figure>
+
+      <button
+        onClick={goToPreviousImage}
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 flex justify-center items-center w-[35px] h-[35px] bg-white rounded-full p-2 shadow-md"
+      >
+        <img
+          src={nextChevron}
+          alt="Click to previous image"
+          className="block w-[11px] h-auto self-center"
+        />
+      </button>
+      <button
+        onClick={goToNextImage}
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 flex justify-center items-center w-[35px] h-[35px] bg-white rounded-full p-2 shadow-md"
+      >
+        <img
+          src={previousChevron}
+          alt="Click to next image"
+          className="block w-[11px] h-auto self-center"
+        />
+      </button>
     </div>
   );
 }

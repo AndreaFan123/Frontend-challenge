@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
-import closeIcon from "../../assets/images/icon-cart.svg";
+import closeIcon from "../../assets/images/icon-close.svg";
 import menuIcon from "../../assets/images/icon-menu.svg";
 import cart from "../../assets/images/icon-cart.svg";
 import avatar from "../../assets/images/image-avatar.png";
@@ -38,10 +38,17 @@ const links = [
 const MobileNavbar = ({ onCloseMenu }: { onCloseMenu: () => void }) => {
   return (
     <div className="absolute pl-4 pt-9 flex flex-col gap-9 top-0 left-0 w-[60%] h-screen bg-pale-orange z-50">
-      <button onClick={onCloseMenu}>
+      <button
+        onClick={onCloseMenu}
+        type="button"
+        data-testid="close-mobile-menu"
+      >
         <img src={closeIcon} alt="Click to close menu" />
       </button>
-      <nav className="flex flex-col gap-5 font-semibold">
+      <nav
+        className="flex flex-col gap-5 font-semibold"
+        data-testid="mobile-menu"
+      >
         {links.map((link) => (
           <a key={link.id} href={link.link}>
             {link.title}
@@ -65,14 +72,22 @@ export default function Navbar() {
   return (
     <header className="px-4 py-5 md:py-11 md:border-b-[1px] md:border-gray-400/20 flex items-center justify-between">
       <div className="flex items-baseline gap-4">
-        <button className="md:hidden" onClick={handleShowMobileNavbar}>
+        <button
+          type="button"
+          data-testid="open-mobile-menu"
+          className="md:hidden"
+          onClick={handleShowMobileNavbar}
+        >
           <img src={menuIcon} alt="Click to open navbar" />
         </button>
         <div className="flex gap-11 items-center">
           <a className="heading" href="/">
             <img src={logo} alt="Sneakers logo, click to landing page" />
           </a>
-          <nav className="hidden md:flex md:text-dark-grayish-blue md:gap-6">
+          <nav
+            className="hidden md:flex md:text-dark-grayish-blue md:gap-6"
+            data-testid="desktop-menu"
+          >
             {links.map((link) => (
               <a key={link.id} href={link.link}>
                 {link.title}
