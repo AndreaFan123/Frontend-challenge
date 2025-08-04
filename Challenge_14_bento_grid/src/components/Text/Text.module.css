@@ -1,0 +1,66 @@
+h1 {
+  font-size: var(--font-typography-text-preset-1-font-size);
+  font-weight: var(--font-typography-text-preset-1-font-weigh);
+  line-height: var(--font-typography-text-preset-1-line-height);
+  letter-spacing: var(--font-typography-text-preset-1-letter-spacing);
+}
+
+h2 {
+  font-size: var(--font-typography-text-preset-2-font-size);
+  font-weight: var(--font-typography-text-preset-2-font-weigh);
+  line-height: var(--font-typography-text-preset-2-line-height);
+  letter-spacing: var(--font-typography-text-preset-2-letter-spacing);
+}
+
+h3 {
+  font-size: var(--font-typography-text-preset-3-font-size);
+  font-weight: var(--font-typography-text-preset-3-font-weigh);
+  line-height: var(--font-typography-text-preset-3-line-height);
+  letter-spacing: var(--font-typography-text-preset-3-letter-spacing);
+}
+
+h4 {
+  font-size: var(--font-typography-text-preset-4-font-size);
+  font-weight: var(--font-typography-text-preset-4-font-weigh);
+  line-height: var(--font-typography-text-preset-4-line-height);
+  letter-spacing: var(--font-typography-text-preset-4-letter-spacing);
+}
+
+.description {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.tab-red {
+  font-size: var(--font-typography-text-tab-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-red-500);
+  background-color: var(--color-red-100);
+}
+
+.tab-green {
+  font-size: var(--font-typography-text-tab-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-green-500);
+  background-color: var(--color-green-100);
+}
+
+.default {
+  color: var(--semantic-fg-default);
+}
+
+.light {
+  color: var(--color-white-500);
+}
+
+.primary {
+  color: var(--semantic-accent-primary);
+}
+
+.secondary {
+  color: var(--semantic-accent-secondary);
+}
+
+.ghost {
+  color: var(--semantic-fg-subtle);
+}

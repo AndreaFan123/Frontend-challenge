@@ -1,0 +1,16 @@
+{
+  "space": {
+    "100": { "value": "0.5rem" },
+    "200": { "value": "1rem" },
+    "300": { "value": "1.5rem" },
+    "400": { "value": "2rem" },
+    "500": { "value": "2.5rem" }
+  },
+  "semantic": {
+    "space": {
+      "control-sm": { "value": "{space.100.value}" },
+      "control-md": { "value": "{space.200.value}" },
+      "section-gap": { "value": "{space.500.value}" }
+    }
+  }
+}
