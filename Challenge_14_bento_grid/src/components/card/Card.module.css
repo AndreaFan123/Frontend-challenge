@@ -1,0 +1,30 @@
+.card {
+  border-radius: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.primary {
+  background-color: var(--semantic-accent-primary);
+  color: var(--semantic-fg-light);
+}
+
+.secondary {
+  background-color: var(--color-purple-100);
+  color: var(--semantic-fg-default);
+}
+
+.light {
+  background-color: var(--color-white-500);
+  color: var(--semantic-fg-default);
+}
+
+.sun {
+  background-color: var(--color-yellow-500);
+  color: var(--semantic-fg-default);
+}
+
+.light-sun {
+  background-color: var(--color-yellow-100);
+  color: var(--semantic-fg-default);
+}

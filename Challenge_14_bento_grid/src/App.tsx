@@ -1,5 +1,6 @@
 import { Button } from "./components/button/Button";
 import { Text } from "./components/Text/Text";
+import { Card } from "./components/card/Card";
 import "./index.css";
 
 function App() {
@@ -19,6 +20,13 @@ function App() {
           Ghost Text
         </Text>
         <Text as="p">Default Text</Text>
+      </div>
+      <div>
+        <Card variant="primary">Primary Card</Card>
+        <Card variant="secondary">Secondary Card</Card>
+        <Card variant="light">Light Card</Card>
+        <Card variant="sun">Sun Card</Card>
+        <Card variant="light-sun">Light Sun Card</Card>
       </div>
       <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
