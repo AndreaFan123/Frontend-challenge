@@ -102,8 +102,3 @@ Table of contents:
 - [Live Demo](https://frontend-challenge-eta-five.vercel.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_13_News_homepage)
 - Tech Stack: `React`, `TypeScript`, `CSS`
-## Challenge 20: Notifications page
-
-- Live Demo: TBD
-- [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_20_Notifications_page)
-- Tech Stack: `Vue`, `Tailwind CSS`, `TypeScript`
