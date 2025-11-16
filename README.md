@@ -17,13 +17,7 @@ Table of contents:
 - [Article Preview Component](#challenge-11-article-preview-component)
 - [Galleria Slideshow](#challenge-12-galleria-slideshow)
 - [W. News Site](#challenge-13-w-news-site)
-- [Bento Grid](#challenge-14-bento-grid)
-- [Conference Ticket Generator](#challenge-15-conference-ticket-generator)
-- [Browser Extension Manager UI](#challenge-16-browser-extension-manager-ui)
-- [Contact Form](#challenge-17-contact-form)
-- [Mortgage Repayment Calculator](#challenge-18-mortgage-repayment-calculator)
-- [Newsletter Sign-up Form with Success Message](#challenge-19-newsletter-sign-up-form-with-success-message)
-- [Notifications Page](#challenge-20-notifications-page)
+- [Recipe-page](#challenge-14-receipe-page)
 
 ## Challenge 1: Order summary
 
@@ -102,3 +96,8 @@ Table of contents:
 - [Live Demo](https://frontend-challenge-eta-five.vercel.app/)
 - [GitHub](https://github.com/AndreaFan123/Frontend-challenge/tree/main/Challenge_13_News_homepage)
 - Tech Stack: `React`, `TypeScript`, `CSS`
+
+## Challenge 14: Receipe Page
+- [Live Demo]()
+- [GitHub]()
+- Tech Stack: `HTML`, `CSS`
